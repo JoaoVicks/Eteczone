@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+.menu-navegacao {
+  
+  padding: 30px 4%;
+  text-align: center;
+  position: fixed;
+  top:0;
+  left:0;
+  margin-left:-2%;
+  width: 100%;
+  transition: 1s;
+  
+}
+
+.menu-navegacao ul {
+  list-style-type: none;
+margin: 0;
+  padding: 0;
+}
+
+.menu-navegacao li {
+  display: inline-block;
+  margin-right: 110px;
+  margin-top: 1%;
+  
+  
+  
+}
+
+
+.menu-navegacao li:last-child {
+  margin-right: 0px;
+}
+
+.menu-navegacao a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  padding: 5px ;
+  font-size: 30px;
+  
+  position: relative;
+}
+.menu-navegacao a::after{
+ content: " ";
+ width: 0%;
+ height: 4px;
+ background-color: white;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+transition: all 1s ease-in-out;
+border-radius: 3px;
+}
+.menu-navegacao a:hover::after{
+    width: 100%;
+    
+}
+
+
+.titulo1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:80px;
+    margin-left: 2%;
+    white-space: pre;
+margin-top: 10%;
+text-transform: uppercase;
+
+}
+.subtitulo{
+    -webkit-text-stroke: 3px rgb(255, 255, 255); /* Para navegadores baseados no WebKit, como o Google Chrome e Safari */
+    
+  color: transparent; /* Torna o texto transparente */
+}
+
+.degrade{
+    width: 100%;
+    padding: 80px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left ,orange, orangered,rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 500% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+
+}
+
+
+@keyframes mov-degrade {
+    0%{
+        background-position-x :0% ;
+
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+.menu-navegacao.rolagem{
+    background-color: rgb(255, 255, 255);
+    
+    padding:20px 4% ;
+}
+.menu-navegacao.rolagem a{
+    color: orangered;
+}
+.menu-navegacao.rolagem a::after{ 
+    background-color: #ff4500;
+    
+    
+}
+.citacao{
+    color:white;
+    margin-top: -10%;
+margin-left: 7%;
+white-space: pre;
+font-style:inherit;
+font-size: 20px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.fundo-quem{
+    padding: 200px ; 
+    margin-top: -10%;
+    
+}
+.title2{
+    text-align: center ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+
+    
+}
+.fundo-quem p{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+white-space: pre;
+margin-left: 5%;
+
+}  
+.gradiente2{
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 400% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
