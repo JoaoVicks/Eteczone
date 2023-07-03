@@ -30,3 +30,20 @@ function changeText() {
 
 // Chamar a função changeText a cada 10 segundos
 setInterval(changeText, 10000);
+//ação de clicar o botão de contato
+function toggleFormulario() {
+    var formularioContato = document.getElementById("formulario-contato");
+    var btnContato = document.getElementById("btn-contato");
+
+    if (formularioContato.classList.contains("form-cont")) {
+        formularioContato.classList.remove("form-cont");
+        formularioContato.classList.add("visible");
+        btnContato.textContent = "Fechar";
+    } else {
+        formularioContato.classList.remove("visible");
+        formularioContato.classList.add("form-cont");
+        btnContato.textContent = "Contato";
+    }
+}
+
+

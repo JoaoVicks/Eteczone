@@ -18,13 +18,14 @@
     
         </ul>
         
-        <button id="ibutton" class="original-button">CONTATO</button>
+        <button id="btn-contato" class="original-button" onclick="toggleFormulario()">CONTATO</button>
         
-        <div class="form-cont">
-        <h1>Formulario de contato </h2>
+        <div id="formulario-contato"   class="form-cont">
+        <section class="form-cont">
+          <h1>Formulario de contato </h2>
           <form method="post" action="https://formsubmit.co/zoneetec@gmail.com">
             <label for="inome">Nome</label>
-            <input type="text" name="text" id="inome" placeholder="Digite seu nome, por favor" required>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu nome, por favor" required>
         
             <label for="iemail">Email</label>
             <input type="email" name="email" id="iemail" placeholder="Digite seu email, por favor" required>
@@ -34,10 +35,12 @@
         
             <button class="button" type="submit">Enviar</button>
             
-           
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
         </form>
         
         </div>
+        </section>
     </nav> 
 
 
