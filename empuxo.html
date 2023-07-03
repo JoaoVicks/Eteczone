@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="empuxo.css">
+    <title>EMPUXO</title>
+</head>
+<body>
+    <div id="entradas">
+        <input type="number" id = "boatdensi" placeholder="DENSIDADE DO BARCO"> <br>
+        <input type="number" id = "fluiddensi" placeholder="DENSIDADE DO FLUIDO"> <br>
+        <input type="number" id = "mediapeople" placeholder="MEDIA DA MASSA DAS PESSOAS"> <br>
+        <input type="number" id = "comp" placeholder="COMPRIMENTO DO BARCO"> <br>
+        <input type="number" id = "larg" placeholder="LARGURA DO BARCO"> <br>
+        <input type="number" id = "alt" placeholder="ALTURA DO BARCO"> <br>
+        <button onclick="realizar()">MOSTRAR RESOLUCÃO</button>
+    </div>
+    <div id="resolucao">
+        <p>PARA ACHAR O VOLUME DO BARCO MULTIPLICMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p> <br>
+        <p id="volume"></p> <br>
+        <p>PARA ACHAR O EMPUXO MULTIPLICAMOS A DENSIDADE DO FLUIDO A FORÇA DA GRAVIDADE E O VOLUME DO BARCO</p> <br>
+        <p id="empuxo"></p> <br>
+        <p>PARA ACHAR TODA A MASSA NO BARCO DIVIDIMOS O EMPUXO PELA FORÇA DA GRAVIDADE</p> <br>
+        <p id="massatotal"></p> <br>
+        <p>PARA ACHAR A MASSA SOMENTE DO BARCO MULTIPLICAMOS A DENSIDADE DO BARCO PELO VOLUME DO BARCO</p> <br>
+        <p id="massabarco"></p> <br>
+        <p>PARA ACHAR SOMENTE A MASSA DAS PESSOAS SUBTRAIMOS A MASSA TOTAL PELA MASSA DO BARCO</p> <br>
+        <p id="massapessoas"></p> <br>
+        <p>E PARA ACHARMOS A QUANTIDADE DE PESSOAS DIVIDIMOS A MASSA DAS PESSOAS PELA MÉDIA DAS MASSAS</p> <br>
+        <p id="resposta"></p> <br>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="empuxo.js"></script>
+</body>
+</html>
