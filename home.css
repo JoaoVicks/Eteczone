@@ -1,8 +1,86 @@
-.text1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgb(120, 5, 228);
-    font-size: 24px;
- text-align: center;
- margin-top: 20%;
- margin-left: -500%;
+*{
+    margin: 0;
+    padding: 0;
+    
 }
+
+
+.titulo1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:80px;
+    margin-left: -90%;
+    white-space: pre;
+
+
+}
+.subtitulo{
+    -webkit-text-stroke: 3px rgb(255, 255, 255); /* Para navegadores baseados no WebKit, como o Google Chrome e Safari */
+    
+  color: transparent; /* Torna o texto transparente */
+}
+
+.degrade{
+    width: 100%;
+    padding: 300px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left ,orange, orangered,rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 500% 100%;
+    animation: mov-degrade 3s infinite alternate;
+
+}
+.menu-navegacao {
+    
+    padding: 10px;
+    text-align: center;
+    margin-top: -60%;
+  }
+  
+  .menu-navegacao ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu-navegacao li {
+    display: inline-block;
+    margin-right: 150px;
+    
+  }
+  
+  
+  .menu-navegacao a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  .menu-navegacao a:hover {
+    background-color: #ccc;
+  }
+  
+
+
+
+
+
+
+@keyframes mov-degrade {
+    0%{
+        background-position-x :0% ;
+
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+
+
+
+
+
+
+
