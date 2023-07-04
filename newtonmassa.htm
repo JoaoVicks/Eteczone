@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newtonmassa.css">
+    <title>NEWTON COM MASSA</title>
+</head>
+<body>
+    <div id="entradas">
+        <input type="number" id="massamesa" placeholder="MASSA NA MESA"> <br>
+        <input type="number" id="massapendurada" placeholder="MASSA PENDURADA"> <br>
+        <button onclick="realizar()">ENVIAR VALORES</button>
+    </div>
+    <div id="resolucao">
+        <p>PARA ACHAR A FORÇA DO SISTEMA DEVEMOS MULTIPLICAR A MASSA PENDURADA PELA FORÇA DA GRAVIDADE</p>
+        <p id="fr"></p>
+        <p>PARA ACHAR A ACELERAÇÃO DO SISTEMA DEVEMOS DIVIDIR A FORÇA PELA SOMA DAS DUAS MASSSAS DO SISTEMA</p>
+        <p id="ac"></p>
+        <p>E PARA ACHAR A TENSÃO DO SISTEMA DEVEMOS SUBTRAIR A FORÇA DA GRAVIDADE PELA ACELERAÇÃO DO SISTEMA E MULTIPLICAR ESSE VALOR PELA MASSA PENDURADA</p>
+        <p id="te"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="newtonmassa.js"></script>
+</body>
+</html>

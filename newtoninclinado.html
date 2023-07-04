@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newtoninclinado.css">
+    <title>Sistema Inclinado</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" placeholder="MASSA NA MESA" id="massamesa"> <br>
+        <input type="number" placeholder="MASSA PENDURADA" id="massapendurada"> <br>
+        <input type="number" placeholder="ANGULO DE INCLINAÇÃO" id="angulo"> <br>
+        <button onclick="realizar()">ENVIAR VALORES</button>
+    </div>
+    <div id="resolucao">
+        <p>PARA ACHAR A FORÇA EXERCIDA NA MASSA PENDURADA DEVEMOS MULTIPLICAR A MASSA PENDURADA E A FORÇA DA GRAVIDADE</p>
+        <p id="f1"></p>
+        <p>PARA ACHAR A FORÇA EXERCIDA PELA MASSA EM CIMA DA MESA DEVEMOS MULTIPLICAR A MASSA, A FORÇA DA GRAVIDADE E O SENO DO ANGULO</p>
+        <p id="f2"></p>
+        <p>PARA ACHARMOS A ACELERAÇÃO DEVEMOS DIVIDIR A DIFERENÇA DAS FORÇAS PELA SOMA DAS MASSAS</p>
+        <p id="ac"></p>
+        <p id="di"></p>
+        <p id="te"></p>
+        <button onclick="voltar()">ENVIAR NOVOS VALORES</button>
+    </div>
+    <script src="newtoninclinado.js"></script>
+</body>
+</html>

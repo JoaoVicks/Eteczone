@@ -1,0 +1,16 @@
+input:hover::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+
+}
+
+input:focus::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#resolucao{
+    display: none;
+}
