@@ -1,3 +1,10 @@
+//mudança do tamanho do fundo 
+window.addEventListener("scroll", function() {
+    let header = document.querySelector('#ifundo');
+    header.classList.toggle('rolagem2', window.scrollY > 0);
+});
+
+//mudança de do menu navegação
 window.addEventListener("scroll", function() {
     let header = document.querySelector('#inav');
     header.classList.toggle('rolagem', window.scrollY > 0);
@@ -47,3 +54,13 @@ function toggleFormulario() {
 }
 
 
+//dark mode e light mode 
+let $html =  document.querySelector('html')
+let $checkbox = document.querySelector('#idark')
+
+
+$checkbox.addEventListener('change', function(){
+$html.classList.toggle('light-mode')
+
+
+})
