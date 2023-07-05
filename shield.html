@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shield.css">
+    <title>FORÇA DO ESCUDO</title>
+</head>
+<body>
+    <div id="entrada">
+        <select name="" id="planeta" onclick="sumir()">
+            <option value="nehum" id="selecionar">SELECIONAR</option>
+            <option value="SOL">SOL</option>
+            <option value="MERCURIO">MERCURIO</option>
+            <option value="VENUS">VENUS</option>
+            <option value="TERRA">TERRA</option>
+            <option value="MARTE">MARTE</option>
+            <option value="JUPTER">JUPTER</option>
+            <option value="SATURNO">SATURNO</option>
+            <option value="URANO">URANO</option>
+            <option value="NETUNO">NETUNO</option>
+            <option value="PLUTÃO">PLUTÃO</option>
+            <option value="HYGIEA">HYGIEA</option>
+            <option value="VESTA">VESTA</option>
+            <option value="CERES">CERES</option>
+            <option value="PALLAS">PALLAS</option>
+            <option value="HAUMEA">HAUMEA</option>
+            <option value="MAKEMAKE">MAKEMAKE</option>
+            <option value="ERIS">ERIS</option>
+            <option value="LUA">LUA</option>
+            <option value="IO">IO</option>
+            <option value="EUROPA">EUROPA</option>
+            <option value="GANYMEDE">GANYMEDE</option>
+            <option value="CALLISTO">CALLISTO</option>
+            <option value="ENCELADUS">ENCELADUS</option>
+            <option value="TITAN">TITAN</option>
+            <option value="TRITON">TRITON</option>
+        </select> <br>
+        <input type="number" id="massa" placeholder="MASSA"> <br>
+        <input type="number" id="altura" placeholder="ALTURA"> <br>
+        <button onclick="realizar()">ENVIAR VALORES</button>
+    </div>
+    <div id="resolucao">
+        <p id="mc"></p>
+        <p id="rc"></p>
+        <p>PARA ACHARMOS O RAIO DA ORBITA DEVEMOS SOMAR A ALTURA DO SATÉLITE MULTIPLICADA POR 1000 COM O RAIO DO CORPO</p>
+        <p id="ro"></p>
+        <p>PARA ACHARMOS A VELOCIDADE DO SATÉLITE DEVEMOS MULTIPLICAR 6.67e-11 PELA MASSA DO CORPO E DIVIDIR ESSE VALOR PELO RAIO DA ÓRBITA ELEVADO AO QUADRADO</p>
+        <p id="vl"></p>
+        <p>PARA ACHARMOS A FORÇA DA GRAVIDADE NO SATÉLITE DEVEMOS APENAS DIVIDIR A ACELERAÇÃO PELA MASSA DO CORPO</p>
+        <p id="fr"></p>
+        <p>E COMO A ACELERAÇÃO POSSUI O MESMO VALOR QUE O ESCUDO...</p>
+        <p id="sh"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="shield.js"></script>
+</body>
+</html>
