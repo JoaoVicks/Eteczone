@@ -54,13 +54,22 @@ function toggleFormulario() {
 }
 
 
-//dark mode e light mode 
-let $html =  document.querySelector('html')
-let $checkbox = document.querySelector('#idark')
 
+document.addEventListener('DOMContentLoaded',function(){
 
-$checkbox.addEventListener('change', function(){
-$html.classList.toggle('light-mode')
+let html = document.querySelector('html');
+let checkbox = document.querySelector('#idark');
 
+    checkbox.addEventListener('change', function () {
+    html.classList.toggle('light-mode');
+});
+});
 
-})
+document.addEventListener('DOMContentLoaded', function() {
+    let joao = document.querySelector('html');
+    let pedro = document.querySelector('#idark2');
+
+    pedro.addEventListener('change', function() {
+    joao.classList.toggle('light-mode2');
+    });
+});

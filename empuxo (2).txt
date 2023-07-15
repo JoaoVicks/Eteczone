@@ -1,0 +1,2 @@
+O programa consiste em captar os valores inseridos nos inputs, verificar se esses inputs possuem valores
+ e se possuírem realizar operações e gerar explicações para o exercicio de empuxo num barco no site The Phisics Aviary

@@ -6,18 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="empuxo.css">
     <title>EMPUXO</title>
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="fisica.css">
 </head>
 <body>
-    <div id="entradas">
-        <input type="number" id = "boatdensi" placeholder="DENSIDADE DO BARCO"> <br>
-        <input type="number" id = "fluiddensi" placeholder="DENSIDADE DO FLUIDO"> <br>
-        <input type="number" id = "mediapeople" placeholder="MEDIA DA MASSA DAS PESSOAS"> <br>
-        <input type="number" id = "comp" placeholder="COMPRIMENTO DO BARCO"> <br>
-        <input type="number" id = "larg" placeholder="LARGURA DO BARCO"> <br>
-        <input type="number" id = "alt" placeholder="ALTURA DO BARCO"> <br>
-        <button onclick="realizar()">MOSTRAR RESOLUCÃO</button>
-    </div>
-    <div id="resolucao">
+    <nav class="menu-navegacao3" id="inav">
+        
+        <label class="switch3" >
+            <input type="checkbox" id="idark3">
+            <span class="slider"></span>
+        </label>
+        
+            <ul>
+            <li><a class="links2" href="fisica.html">Cards</a></li>
+            
+            </ul>
+        <a href="teste.html" > <button style="margin-top: -3%; "  class="original-button4" >HOME</button></a>
+    </nav>
+    
+        <div class="formulario" id="entradas">
+            <div class="gradiente2">
+            <h1>Insira os Valores</h1>
+            </div>
+            <br>
+            
+            <input type="number" id = "boatdensi" placeholder="DENSIDADE DO BARCO" value="2"> <br>
+            <br>
+            <input type="number" id = "fluiddensi" placeholder="DENSIDADE DO FLUIDO" value="2"> <br>
+            <br>
+            <input type="number" id = "mediapeople" placeholder="MÉDIA DA MASSA DAS PESSOAS" value="2"> <br>
+            <br>
+            <input type="number" id = "comp" placeholder="COMPRIMENTO DO BARCO" value="2"> <br>
+            <br>
+            <input type="number" id = "larg" placeholder="LARGURA DO BARCO" value="2"> <br>
+            <br>
+            <input type="number" id = "alt" placeholder="ALTURA DO BARCO" value="2"> <br>
+            <br>
+            <button  class="original-button3"    onclick="realizar()">MOSTRAR RESOLUCÃO</button>
+        </div>
+    
+        <img class="icn1" src="forca (1).png">
+        <img class="icone2" src="icntensao.png">
+        <img src="icn4.png" class="icn4">
+        <img src="icn5.png" class="icn3">
+</div>
+    <div id="resolucao"  class="explicacao">
         <p>PARA ACHAR O VOLUME DO BARCO MULTIPLICMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p> <br>
         <p id="volume"></p> <br>
         <p>PARA ACHAR O EMPUXO MULTIPLICAMOS A DENSIDADE DO FLUIDO A FORÇA DA GRAVIDADE E O VOLUME DO BARCO</p> <br>
@@ -33,5 +66,33 @@
         <button onclick="voltar()">INSERIR NOVOS VALORES</button>
     </div>
     <script src="empuxo.js"></script>
+
+    <div class="slide-container">
+        <div class="slide-content">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="image-content">
+                            <div class="card-img">
+                            
+                            <img src="volume.png">
+                            
+                            </div>
+                            
+                    </div>
+                    <div class="titulo-explicacao">
+                            <div class="gradiente2">
+                                <h2>Volume do Barco  </h2>
+                            </div>
+                    </div>
+                    <div class="texto-explicacao">
+                        <p>PARA ACHAR O VOLUME DO BARCO MULTIPLICAMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p>
+                    </div>
+                    <div class="resultado1">
+                        <p id="volume"></p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

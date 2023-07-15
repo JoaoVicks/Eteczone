@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<style>
+    .splide__slide img {
+  width: 50%;
+  height: auto;
+}
+body{
+    background-color: #333;
+}
+.my-carousel-progress {
+  background: #ccc;
+}
+
+.my-carousel-progress-bar {
+  background: greenyellow;
+  height: 2px;
+  transition: width 400ms ease;
+  width: 0;
+}
+
+</style>
+
+<body >
+
+
+
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+
+                <img  src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
+                
+                </li>
+                <li class="splide__slide">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
+            
+    
+
+                </li>
+                <li class="splide__slide">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
+
+                </li>
+            </ul>
+        </div>
+        <div class="my-carousel-progress">
+            <div class="my-carousel-progress-bar"></div>
+          </div>
+        </section>
+    </section>
+    
+    
+
+
+
+    </div>
+</body>
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+    } );
+    var splide = new Splide( '.splide' );
+var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
+
+// Updates the bar width whenever the carousel moves:
+splide.on( 'mounted move', function () {
+  var end  = splide.Components.Controller.getEnd() + 1;
+  var rate = Math.min( ( splide.index + 1 ) / end, 1 );
+  bar.style.width = String( 100 * rate ) + '%';
+} );
+
+splide.mount();
+
+  </script>
+</html>

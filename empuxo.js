@@ -44,7 +44,7 @@ function realizar() {
 function voltar() {
     // SUBSTITUIÇÃO DAS EXPLICAÇÕES  PARA OS INPUTS//
     document.getElementById("resolucao").style.display = "none "
-    document.getElementById("entradas").style.display = "block "
+    document.getElementById("entradas").style.display = "flex "
     //                                              //
 
     // SUBSTITUINDO OS VALORES DOS INPUTS PARA STRINGS VAZIAS//
@@ -57,3 +57,12 @@ function voltar() {
     //                                                        //
 
 }
+//light and dark mode //
+document.addEventListener('DOMContentLoaded', function () {
+    let html = document.querySelector('html');
+    let botao = document.querySelector('#idark3');
+
+    botao.addEventListener('change', function () {
+    html.classList.toggle('light_mode3');
+    });
+});
