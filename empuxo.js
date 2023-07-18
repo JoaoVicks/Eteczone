@@ -66,3 +66,22 @@ document.addEventListener('DOMContentLoaded', function () {
     html.classList.toggle('light_mode3');
     });
 });
+
+
+function desaparecer(){
+    var imagem1 = document.getElementById("img1");
+    var imagem2 = document.getElementById("img2");
+
+    imagem1.style.visibility = "hidden";
+    imagem2.style.visibility = "hidden";
+
+
+};
+
+function aparecer(){
+    let imagem1= document.getElementById('img1');
+    let imagem2= document.getElementById('img2');
+
+    imagem1.style.visibility = 'visible';
+    imagem2.style.visibility = 'visible ';
+}

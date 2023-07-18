@@ -1,5 +1,5 @@
 function realizar() {
-    let MM = document.getElementById("massamesa").value;
+    let MM = document.getElementById ("massamesa").value;
     let MH = document.getElementById("massapendurada").value;
     let AN = document.getElementById("angulo").value;
 
@@ -43,10 +43,20 @@ function realizar() {
 }
 
 function voltar() {
-    document.getElementById("entrada").style.display = "block";
+    document.getElementById("entrada").style.display = "flex";
     document.getElementById("resolucao").style.display = "none";
 
     document.getElementById("massamesa").value = "";
     document.getElementById("massapendurada").value = "";
     document.getElementById("angulo").value = "";
 }
+//light-mode- and -dark-mode
+document.addEventListener('DOMContentLoaded', function(){
+let html = document.querySelector('html');
+let btn = document.querySelector('#idark4');
+
+btn.addEventListener('change',function() {
+html.classList.toggle('light-mode4');
+
+});
+});

@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="empuxo.css">
+    
     <title>EMPUXO</title>
+
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
     <link rel="stylesheet" href="teste.css">
     <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
 </head>
 <body>
     <nav class="menu-navegacao3" id="inav">
@@ -30,69 +33,207 @@
             </div>
             <br>
             
-            <input type="number" id = "boatdensi" placeholder="DENSIDADE DO BARCO" value="2"> <br>
+            <input type="number" id = "boatdensi" placeholder="DENSIDADE DO BARCO" value="2" required > <br>
             <br>
-            <input type="number" id = "fluiddensi" placeholder="DENSIDADE DO FLUIDO" value="2"> <br>
+            <input type="number" id = "fluiddensi" placeholder="DENSIDADE DO FLUIDO" value="2" required> <br>
             <br>
-            <input type="number" id = "mediapeople" placeholder="MÉDIA DA MASSA DAS PESSOAS" value="2"> <br>
+            <input type="number" id = "mediapeople" placeholder="MÉDIA DA MASSA DAS PESSOAS" value="2" required> <br>
             <br>
-            <input type="number" id = "comp" placeholder="COMPRIMENTO DO BARCO" value="2"> <br>
+            <input type="number" id = "comp" placeholder="COMPRIMENTO DO BARCO" value="2" required> <br>
             <br>
-            <input type="number" id = "larg" placeholder="LARGURA DO BARCO" value="2"> <br>
+            <input type="number" id = "larg" placeholder="LARGURA DO BARCO" value="2" required> <br>
             <br>
-            <input type="number" id = "alt" placeholder="ALTURA DO BARCO" value="2"> <br>
+            <input type="number" id = "alt" placeholder="ALTURA DO BARCO" value="2" required> <br>
             <br>
-            <button  class="original-button3"    onclick="realizar()">MOSTRAR RESOLUCÃO</button>
+            <button  class="original-button3"    onclick="realizar() ; desaparecer()">MOSTRAR RESOLUCÃO</button>
         </div>
     
-        <img class="icn1" src="forca (1).png">
-        <img class="icone2" src="icntensao.png">
-        <img src="icn4.png" class="icn4">
+        <img class="icn1" src="forca (1).png" id="img1">
+        <img class="icone2" src="icntensao.png" id="img2">
+        <img src="icn4.png" class="icn4" >
         <img src="icn5.png" class="icn3">
 </div>
-    <div id="resolucao"  class="explicacao">
-        <p>PARA ACHAR O VOLUME DO BARCO MULTIPLICMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p> <br>
-        <p id="volume"></p> <br>
-        <p>PARA ACHAR O EMPUXO MULTIPLICAMOS A DENSIDADE DO FLUIDO A FORÇA DA GRAVIDADE E O VOLUME DO BARCO</p> <br>
-        <p id="empuxo"></p> <br>
-        <p>PARA ACHAR TODA A MASSA NO BARCO DIVIDIMOS O EMPUXO PELA FORÇA DA GRAVIDADE</p> <br>
-        <p id="massatotal"></p> <br>
-        <p>PARA ACHAR A MASSA SOMENTE DO BARCO MULTIPLICAMOS A DENSIDADE DO BARCO PELO VOLUME DO BARCO</p> <br>
-        <p id="massabarco"></p> <br>
-        <p>PARA ACHAR SOMENTE A MASSA DAS PESSOAS SUBTRAIMOS A MASSA TOTAL PELA MASSA DO BARCO</p> <br>
-        <p id="massapessoas"></p> <br>
-        <p>E PARA ACHARMOS A QUANTIDADE DE PESSOAS DIVIDIMOS A MASSA DAS PESSOAS PELA MÉDIA DAS MASSAS</p> <br>
-        <p id="resposta"></p> <br>
-        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
-    </div>
-    <script src="empuxo.js"></script>
 
-    <div class="slide-container">
-        <div class="slide-content">
-            <div class="card-wrapper">
-                <div class="card">
-                    <div class="image-content">
-                            <div class="card-img">
+    <div id="resolucao"  class="explicacao">
+        <div class="gradiente2">
+        <h1 class="title-resolucao"> Passo a passo</h1>
+        </div>
+        <div class="slide-container swiper">
+            <div class="slide-content ">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="volume.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >1</h1>
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>Volume do Barco  </h2>
+                                </div>
+                        </div>
+                        
+                        <div class="texto-explicacao">
+                            <p> Para O VOLUME DO BARCO MULTIPLICaMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="volume"></p> 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="icn.empuxo.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >2</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2> Empuxo do barco</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA O EMPUXO MULTIPLICAMOS A DENSIDADE DO FLUIDO A FORÇA DA GRAVIDADE E O VOLUME DO BARCO</p> 
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="empuxo"></p> 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="peso.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >3</h1>
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>massa total </h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA  achar TODA A MASSA NO BARCO DIVIDIMOS O EMPUXO PELA FORÇA DA GRAVIDADE</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="massatotal"></p> 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="barco (1).png">
+                                
+                                </div>
+                                
+                                <h1 class="numeracao" >4</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>  massa do barco</h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
                             
-                            <img src="volume.png">
-                            
+                            <p>PARA ACHAR A MASSA SOMENTE DO BARCO MULTIPLICAMOS A DENSIDADE DO BARCO PELO VOLUME DO BARCO</p> 
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="massabarco"></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="indice-de-massa-corporal.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >5</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>massa de pessoas</h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHAR SOMENTE A MASSA DAS PESSOAS SUBTRAIMOS A MASSA TOTAL PELA MASSA DO BARCO</p> 
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="massapessoas"></p> 
                             </div>
-                            
+                        </div>
                     </div>
-                    <div class="titulo-explicacao">
-                            <div class="gradiente2">
-                                <h2>Volume do Barco  </h2>
-                            </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="pessoas.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >6</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>número de pessoas </h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>E PARA ACHARMOS A QUANTIDADE DE PESSOAS DIVIDIMOS A MASSA DAS PESSOAS PELA MÉDIA DAS MASSAS</p> 
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p  id="resposta">
+                        </div>
+                        </div>
                     </div>
-                    <div class="texto-explicacao">
-                        <p>PARA ACHAR O VOLUME DO BARCO MULTIPLICAMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p>
-                    </div>
-                    <div class="resultado1">
-                        <p id="volume"></p> 
-                    </div>
+                
                 </div>
             </div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
         </div>
+        <svg class="buble6" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="transparent"   stroke="#FF4500" stroke-width="2" d="M33.5,-49.5C41.9,-46.8,46.1,-34.9,47.9,-24C49.7,-13,49.1,-3,52.2,10.8C55.3,24.5,62.1,42.1,56.9,51C51.8,59.8,34.7,60,20,61C5.3,62.1,-7.1,64.2,-14.8,58.3C-22.5,52.4,-25.6,38.6,-34.6,29.4C-43.6,20.1,-58.4,15.3,-64.3,6.3C-70.1,-2.7,-66.9,-15.9,-58.8,-24.1C-50.8,-32.3,-37.8,-35.5,-27.2,-37.2C-16.6,-38.8,-8.3,-38.9,2.1,-42.2C12.6,-45.5,25.2,-52.1,33.5,-49.5Z" transform="translate(100 100)" />
+        </svg>
+        <svg class="buble7" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="transparent"   stroke="#FF4500" stroke-width="2" d="M43.2,-68.8C53.8,-68.6,58.9,-52.8,67.3,-38.7C75.6,-24.6,87.3,-12.3,84.6,-1.5C82,9.3,65.1,18.6,56,31.3C46.9,44.1,45.5,60.3,37.5,68.3C29.4,76.3,14.7,76.2,3.2,70.6C-8.2,64.9,-16.5,53.9,-24.5,45.8C-32.4,37.7,-40.2,32.7,-51,25.6C-61.7,18.4,-75.6,9.2,-78.3,-1.5C-80.9,-12.3,-72.4,-24.6,-62.6,-33.3C-52.7,-42.1,-41.5,-47.2,-30.8,-47.4C-20.1,-47.7,-10.1,-43,3.1,-48.3C16.2,-53.7,32.5,-69,43.2,-68.8Z" transform="translate(100 100)" />
+        </svg>
+        <svg class="buble8" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="transparent"   stroke="#FF4500" stroke-width="3"d="M43.6,-60.7C56.4,-50.7,66.5,-37.8,69,-23.9C71.6,-9.9,66.6,5.1,61.8,20.1C56.9,35.2,52.2,50.3,42,63.2C31.7,76.1,15.8,86.7,-0.4,87.3C-16.6,87.8,-33.3,78.3,-44,65.5C-54.7,52.8,-59.5,36.8,-61.7,22C-63.9,7.1,-63.5,-6.7,-61.2,-21.8C-58.9,-36.8,-54.7,-53.1,-44.1,-63.8C-33.6,-74.4,-16.8,-79.4,-0.7,-78.5C15.4,-77.5,30.8,-70.6,43.6,-60.7Z" transform="translate(100 100)" />
+        </svg>
+        <svg  class="buble9" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="transparent"   stroke="#FF4500" stroke-width="3"  d="M35.5,-58.8C45.2,-49.1,51.7,-37.8,59.1,-25.8C66.5,-13.7,74.7,-0.9,74.2,11.5C73.6,23.8,64.3,35.7,54.9,49C45.6,62.2,36.2,76.9,24.1,79.1C12,81.2,-2.9,71,-15.3,62.6C-27.7,54.2,-37.6,47.7,-48.3,39.5C-59,31.4,-70.6,21.6,-72.8,10.1C-75,-1.4,-67.8,-14.5,-62.2,-29C-56.6,-43.5,-52.4,-59.4,-42.3,-68.9C-32.2,-78.5,-16.1,-81.8,-1.6,-79.3C12.9,-76.8,25.8,-68.5,35.5,-58.8Z" transform="translate(100 100)" />
+        </svg>
+        
+        <button class="btn-nvresult" onclick="voltar(); aparecer()">INSERIR NOVOS VALORES</button>
     </div>
-</body>
+
+
+    
+</body> 
+<script src="empuxo.js"></script>
+<script src="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.js"></script>
+<script src="cards.js"></script>
 </html>

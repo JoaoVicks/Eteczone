@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,500&family=Poppins:wght@200;300;400;700;800&family=Quicksand&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -12,23 +11,41 @@ a{
 :root{
     --links-menu-navegacao:white;
 --fundo-fisica:#1a1a1a;
---fundo-menu-navegacao:#333;
---fundo-card:#333;
+--fundo-menu-navegacao:#2f2f2f;
+--fundo-card:#212121;
 --cor-scroll-bar:#181818;
 --botao-home:white;
 --cor-letra-botao:black;
 --cor-de-fundo-botao:transparent;
 --linhas-dos-links:white;
+--cor-dos-cards: rgba(26, 26, 26, 0.25);
+--sombra-dos-cards: 15px 15px 30px  rgba(255, 69, 0, 0.5),
+-10px -10px 30px rgb(60, 60, 60);
+--sombra-menu-navegacao: 0px 8px 15px  rgb(25, 25, 25);
+--cor-da-letra-dos-cards:white;
+--opacidade-dos-cards:0.4;
+--subtitulo-cor:white;
+--cor-dos-cards-antes-do-hover:var(--cor-dos-cards);
+--sombra-dos-cards-antes-do-hover:15px 15px 30px rgb(25, 25, 25),
+-15px -15px 30px rgb(60, 60, 60);
 }
 .light-mode2:root{
---fundo-fisica:#d6d2d2;
---fundo-menu-navegacao:#c8c7c7;
---fundo-card:#aeaeae;
+--fundo-fisica:#ebebeb;
+--fundo-menu-navegacao:#dad9d9;
+--fundo-card:#dedddd;
 --cor-scroll-bar:#aeaeae;
 --links-menu-navegacao:orangered;
 --botao-home:orangered;
 --cor-letra-botao:white;
 --linhas-dos-links:orangered;
+--cor-dos-cards: 35px 35px 40px 0px rgba(255, 69, 0, 0.5), inset -12px -12px 16px 0px rgba(255, 69, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+--sombra-dos-cards:35px 35px 40px 0px rgba(255, 69, 0, 0.5), inset -12px -12px 16px 0px rgba(255, 69, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+--subtitulo-cor:orangered;
+--sombra-menu-navegacao: 0px 11px 20px  rgba(255, 65, 1, 0.386);
+--cor-da-letra-dos-cards:orangered;
+--opacidade-dos-cards:0.6;
+--cor-dos-cards-antes-do-hover:#cdcdcd;
+--sombra-dos-cards-antes-do-hover: 0px 0px 20px 0px rgba(255, 69, 0, 0.5), inset -2px -2px 16px 0px rgba(255, 69, 0, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
 }
 
 ::-webkit-scrollbar{
@@ -50,8 +67,8 @@ a{
     position: fixed;
     top: 0;
     left: 0;
-    margin-left: -3%;
-    width: 100%;
+    
+    width: 92%;
     transition: 1s;
     z-index: 3;
     
@@ -107,8 +124,8 @@ margin-right: 110px;
 .links{
   text-decoration: none;
   color: var(--links-menu-navegacao);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: lighter;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
   padding: 5px ;
   font-size: 30px;
   font-weight: 400;
@@ -132,8 +149,10 @@ border-radius: 3px;
 }
 .menu-navegacao2.rolagem{
     background-color:var(--fundo-menu-navegacao);
-    box-shadow: 0px 8px 15px  rgb(25, 25, 25);
-    padding:40px 4% ;
+    box-shadow:var(--sombra-menu-navegacao);
+    padding:32px 4% ;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 .menu-navegacao2.rolagem a{
     color: orangered;
@@ -163,7 +182,7 @@ border-radius: 3px;
 .title2-2{
     text-align: center ;
     font-family: 'Poppins', sans-serif;
-    font-size: 150px;
+    font-size: 200px;
     margin-top: 14%;
     
 }
@@ -230,14 +249,13 @@ padding-top: 17%;
 background-color: var(--fundo-card);
 }
 .card1{
-    background: rgba(26, 26, 26, 0.25);
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-    -15px -15px 30px rgb(60, 60, 60);
+    background:var(--cor-dos-cards-antes-do-hover);
+    box-shadow: var(--sombra-dos-cards-antes-do-hover);
 
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     border-radius: 2px;
     max-width: 350px;
     padding-bottom: -1%;
@@ -248,21 +266,19 @@ background-color: var(--fundo-card);
     padding-top: 30px;
     cursor: pointer;
     text-align: center;
-    opacity: 0.5;
+    opacity: var(--opacidade-dos-cards);
     transition: all 2s;
-    margin:30px
-    
+    margin: 30px;
     
 }
 .card2{
-    background: rgba(26, 26, 26, 0.25);
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-    -15px -15px 30px rgb(60, 60, 60);
+    background:var(--cor-dos-cards-antes-do-hover);
+    box-shadow: var(--sombra-dos-cards-antes-do-hover);
 
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     border-radius: 2px;
     max-width: 350px;
     padding-bottom: -1%;
@@ -273,21 +289,22 @@ background-color: var(--fundo-card);
     padding-top: 30px;
     cursor: pointer;
     text-align: center;
-    opacity: 0.5;
+    opacity: var(--opacidade-dos-cards);
     transition: all 2s;
     margin: 30px;
+    
+    
     
 }
 
 .card3{
-    background: rgba(26, 26, 26, 0.25);
-    box-shadow: 15px 15px 30px rgb(25, 25, 25),
-    -15px -15px 30px rgb(60, 60, 60);
+    background:var(--cor-dos-cards-antes-do-hover);
+    box-shadow: var(--sombra-dos-cards-antes-do-hover);
 
     backdrop-filter: blur( 8px );
     -webkit-backdrop-filter: blur( 8px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
     border-radius: 2px;
     max-width: 350px;
     padding-bottom: -1%;
@@ -298,9 +315,10 @@ background-color: var(--fundo-card);
     padding-top: 30px;
     cursor: pointer;
     text-align: center;
-    opacity: 0.5;
+    opacity: var(--opacidade-dos-cards);
     transition: all 2s;
     margin: 30px;
+    
     
 }
 .fundo1_card1{
@@ -316,11 +334,24 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card2{
+    
+    background-image: url(imagem\ newton-inclinado.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
 .legenda1{
-    color:white;
+    color:var(--cor-da-letra-dos-cards);
     font-size: 24px;
     margin-top:-1%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins';
     font-weight: 200;
     padding: 30px;
     
@@ -338,31 +369,32 @@ background-color: var(--fundo-card);
 }
 .card3:hover{
     opacity: 10;
-box-shadow: 15px 15px 30px rgba(255, 68, 0, 0.534),
--15px -15px 30px rgb(60, 60, 60);
-border-radius: 30px;
-border: 2px solid rgba(255, 255, 255, 0.18);
-transform: translateY(-5%);
+    box-shadow: var(--sombra-dos-cards);
+    background: var(--cor-dos-cards);
+    border-radius: 30px;
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(-5%);
+    
     
 }
 .card2:hover{
-opacity: 10;
-box-shadow: 15px 15px 30px rgba(255, 68, 0, 0.534),
--15px -15px 30px rgb(60, 60, 60);
-border-radius: 30px;
-border: 2px solid rgba(255, 255, 255, 0.18);
-transform: translateY(-5%);
+    opacity: 10;
+    box-shadow: var(--sombra-dos-cards);
+    background: var(--cor-dos-cards);
+    border-radius: 30px;
+    border: 0px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(-5%);
     
 }
 .card1:hover{
     
     opacity: 10;
-    box-shadow: 15px 15px 30px rgba(255, 68, 0, 0.534),
-    -15px -15px 30px rgb(60, 60, 60);
+    box-shadow: var(--sombra-dos-cards);
+    background: var(--cor-dos-cards);
     border-radius: 30px;
-    border: 2px solid rgba(255, 255, 255, 0.18);
+    border: 0px solid rgba(255, 255, 255, 0.18);
     transform: translateY(-5%);
-
+    
     
     
     
@@ -400,7 +432,7 @@ color: orangered;
     
 }
 .subtitulo2{
-    color: white;
+    color:var(--subtitulo-cor);
     font-size: 28px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left:-10% ;

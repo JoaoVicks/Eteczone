@@ -48,8 +48,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    margin-left: -8%;
-    width: 100%;
+
+    width: 92%;
     transition: 1s;
     z-index: 3;
 
@@ -150,6 +150,8 @@ text-transform: uppercase;
     box-shadow: var(--sombra-menu-nav);
     padding:20px 4% ;
     transition: 1s;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
     
 }
 .menu-navegacao.rolagem a{
