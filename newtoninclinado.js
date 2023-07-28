@@ -60,3 +60,23 @@ html.classList.toggle('light-mode4');
 
 });
 });
+
+
+function sumir(){
+    var imagem1 = document.getElementById('img1-1');
+    var imagem2 = document.getElementById('img2-2');
+    
+    imagem1.style.visibility= "hidden";
+    imagem2.style.visibility= "hidden";
+};
+
+
+function aparecer(){
+    var imagem1 = document.getElementById('img1-1');
+    var imagem2 = document.getElementById('img2-2');
+    
+    imagem1.style.visibility= "visible";
+    imagem2.style.visibility= "visible";
+};
+
+

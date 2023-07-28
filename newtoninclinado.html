@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="fisica.css">
     <link rel="stylesheet" href="empuxo.css">
     <link rel="stylesheet" href="teste.css">
-    
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
     <title>Sistema Inclinado</title>
 </head>
 <body>
@@ -31,27 +31,166 @@
         <div class="gradiente2">
             <h1>Insira os Valores</h1>
             </div>
-        <input type="number" placeholder="MASSA NA MESA" id="massamesa"> <br>
-        <input type="number" placeholder="MASSA PENDURADA" id="massapendurada"> <br>
-        <input type="number" placeholder="ANGULO DE INCLINAÇÃO" id="angulo"> <br>
-        <button class="original-button3" style="margin-top: 5%;"  onclick="realizar()">ENVIAR VALORES</button>
+        <input type="number" placeholder="MASSA NA MESA" id="massamesa" value="3"> <br>
+        <input type="number" placeholder="MASSA PENDURADA" id="massapendurada" value="3"> <br>
+        <input type="number" placeholder="ANGULO DE INCLINAÇÃO" id="angulo" value="3"> <br>
+        <button class="original-button3" style="margin-top: 5%;"  onclick="realizar(); sumir()">ENVIAR VALORES</button>
     </div>
     
-    <img class="icn1" src="forca (1).png"style="margin-top: -13%;"  id="img1">
-    <img class="icone2"  src="icntensao.png" style="margin-top: -10%;" id="img2">
+    <img class="icn1" src="forca (1).png"style="margin-top: -13%;"  id="img1-1">
+    <img class="icone2"  src="icntensao.png" style="margin-top: -10%;" id="img2-2">
     <img src="icn4.png"  style="margin-top: -38%;" class="icn4" >
     <img src="icn5.png" style="margin-top: -36%;" class="icn3">
+
     <div id="resolucao" >
-        <p>PARA ACHAR A FORÇA EXERCIDA NA MASSA PENDURADA DEVEMOS MULTIPLICAR A MASSA PENDURADA E A FORÇA DA GRAVIDADE</p>
-        <p id="f1"></p>
-        <p>PARA ACHAR A FORÇA EXERCIDA PELA MASSA EM CIMA DA MESA DEVEMOS MULTIPLICAR A MASSA, A FORÇA DA GRAVIDADE E O SENO DO ANGULO</p>
-        <p id="f2"></p>
-        <p>PARA ACHARMOS A ACELERAÇÃO DEVEMOS DIVIDIR A DIFERENÇA DAS FORÇAS PELA SOMA DAS MASSAS</p>
-        <p id="ac"></p>
-        <p id="di"></p>
-        <p id="te"></p>
-        <button onclick="voltar()">ENVIAR NOVOS VALORES</button>
+        <div class="slide-container2 swiper">
+            <div class="slide-content ">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                    <img src="forca (1).png">
+                                
+                                </div>
+                                <h1 class="numeracao" >1</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>Força exercida no objeto suspenso</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA A FORÇA EXERCIDA NA MASSA PENDURADA DEVEMOS MULTIPLICAR A MASSA PENDURADA E A FORÇA DA GRAVIDADE</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="f1"></p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="caixa-mesa.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >2</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>massa em cima da mesa</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHAR A FORÇA EXERCIDA PELA MASSA EM CIMA DA MESA DEVEMOS MULTIPLICAR A MASSA, A FORÇA DA GRAVIDADE E O SENO DO ANGULO</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="f2"></p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="aceleracao.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >3</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2> aceleração</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHARMOS A ACELERAÇÃO DEVEMOS DIVIDIR A DIFERENÇA DAS FORÇAS PELA SOMA DAS MASSAS</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="ac"></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="direcao.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >4</h1>
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>direção </h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
+                            <p id="di"></p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                        
+                        </div>
+                        </div>
+                    </div>
+                
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="tensao.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >5</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>tensão da corda</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHAR A FORÇA EXERCIDA PELA MASSA EM CIMA DA MESA DEVEMOS MULTIPLICAR A MASSA, A FORÇA DA GRAVIDADE E O SENO DO ANGULO</p>
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="f2"></p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <br>
+            <div class="swiper-button-next swiper-navBtn2"></div>
+        
+            <div class="swiper-button-prev swiper-navBtn2"></div>
+            <br>
+        </div>
+        
+        
+        <div class="swiper-pagination"></div>
+            <button onclick="voltar(); aparecer()" >ENVIAR NOVOS VALORES</button>
     </div>
-    <script src="newtoninclinado.js"></script>
+        
+    
+    </div>
+    
 </body>
+<script src="newtoninclinado.js"></script>
+<script src="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.js"></script>
+<script src="cards2.js"></script>
 </html>
