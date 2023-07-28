@@ -30,3 +30,20 @@ function voltar() {
     document.getElementById("massamesa").value = "";
     document.getElementById("massapendurada").value = ";"
 }
+//light mode anda dark mode //
+
+document.addEventListener('DOMContentLoaded' ,function(){
+ let html$= document.querySelector('html');
+ let botao$= document.querySelector('#idark5');
+
+
+ botao$.addEventListener('change',function(){
+ html$.classList.toggle('light-mode5')
+
+ });
+
+
+
+
+
+});
