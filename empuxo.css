@@ -56,6 +56,7 @@ body{
     --numeracao-posicao:20%;
     --box-shadow: inset 0px -5px 20px rgba(11, 11, 11, 0.749);
     --linhas-dos-links2:#fff;
+    --letras-dos-botoes:black;
 }
 .light_mode3:root{
         --cor-de-fundo-nav: #d4d4d4;
@@ -75,6 +76,7 @@ body{
     --numeracao-posicao:20%;
     --box-shadow: inset 0px 0px 20px #ff4d008e;
     --linhas-dos-links2:orangered;
+    --letras-dos-botoes:white;
 }
 .formulario{
     
@@ -136,7 +138,7 @@ body{
     margin-top:-4%;
 }
 .original-button3:hover {
-    color: white;
+    color: var(--cor-letra-botao);
 
     transform: translateY(5px);
     background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
@@ -297,16 +299,17 @@ body{
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
   }
   
-.original-button4.rolagem2{
-    color:var(--botao-home)
-    
-}
+
 .original-button4:hover{
-    background-color: var(--botao-home);
+    
     transform: translateY(6px);
     border:var(--botao-home);
-    color:var(--cor-letra-botao)
+    color:white;
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 200% 100%;
+    animation:mov-fundo  3s alternate linear infinite;
 }
+
 .original-button4 {
     display: flex;
     align-items: center;
