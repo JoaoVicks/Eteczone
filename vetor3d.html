@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vetor3d.css">
+    <title>VETOR 3D</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="x" placeholder="EIXO X"> <br>
+        <input type="number" id="y" placeholder="EIXO Y"> <br>
+        <input type="number" id="z" placeholder="EIXO Z"> <br>
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PARA ACHARMOS AS HIPOTENUSA DEVEMOS REALIZAR O TEOREMA DE PITAGORAS (A² + B² = C²)</p>
+        <p>PARA ACHARMOS A HIPOTENUSA DO CHÃO REALIZAMOS √(X² + Z²) = HC</p>
+        <p id="HC"></p>
+        <p>PARA ACHARMOS A HIPOTENUSA NO AR REALIZAMOS √(HC² + Y²) = HA</p>
+        <p id="HA"></p>
+        <p>PARA ACHARMOS O ANGULO NO CHÃO REALIZAMOS A TANGENTE DA DIVISÃO DE X POR Z, MULTIPLICAMOS POR 180 E DIVIDIMOS POR π </p>
+        <p id="AC"></p>
+        <p>PARA ACHARMOS O ANGULO NO AR REALIZAMOS A TANGENTE DA DIVISÃO DO ANGULO DO CHÃO POR Y, MULTIPLICAMOS POR 180 E DIVIDIMOS POR π </p>
+        <p id="AA"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="vetor3d.js"></script>
+</body>
+</html>
