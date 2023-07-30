@@ -5,55 +5,234 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="shield.css">
+    <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
     <title>FORÇA DO ESCUDO</title>
 </head>
 <body>
-    <div id="entrada">
-        <select name="" id="planeta" onclick="sumir()">
-            <option value="nehum" id="selecionar">SELECIONAR</option>
-            <option value="SOL">SOL</option>
-            <option value="MERCURIO">MERCURIO</option>
-            <option value="VENUS">VENUS</option>
-            <option value="TERRA">TERRA</option>
-            <option value="MARTE">MARTE</option>
-            <option value="JUPTER">JUPTER</option>
-            <option value="SATURNO">SATURNO</option>
-            <option value="URANO">URANO</option>
-            <option value="NETUNO">NETUNO</option>
-            <option value="PLUTÃO">PLUTÃO</option>
-            <option value="HYGIEA">HYGIEA</option>
-            <option value="VESTA">VESTA</option>
-            <option value="CERES">CERES</option>
-            <option value="PALLAS">PALLAS</option>
-            <option value="HAUMEA">HAUMEA</option>
-            <option value="MAKEMAKE">MAKEMAKE</option>
-            <option value="ERIS">ERIS</option>
-            <option value="LUA">LUA</option>
-            <option value="IO">IO</option>
-            <option value="EUROPA">EUROPA</option>
-            <option value="GANYMEDE">GANYMEDE</option>
-            <option value="CALLISTO">CALLISTO</option>
-            <option value="ENCELADUS">ENCELADUS</option>
-            <option value="TITAN">TITAN</option>
-            <option value="TRITON">TRITON</option>
-        </select> <br>
-        <input type="number" id="massa" placeholder="MASSA"> <br>
-        <input type="number" id="altura" placeholder="ALTURA"> <br>
-        <button onclick="realizar()">ENVIAR VALORES</button>
-    </div>
-    <div id="resolucao">
-        <p id="mc"></p>
-        <p id="rc"></p>
-        <p>PARA ACHARMOS O RAIO DA ORBITA DEVEMOS SOMAR A ALTURA DO SATÉLITE MULTIPLICADA POR 1000 COM O RAIO DO CORPO</p>
-        <p id="ro"></p>
-        <p>PARA ACHARMOS A VELOCIDADE DO SATÉLITE DEVEMOS MULTIPLICAR 6.67e-11 PELA MASSA DO CORPO E DIVIDIR ESSE VALOR PELO RAIO DA ÓRBITA ELEVADO AO QUADRADO</p>
-        <p id="vl"></p>
-        <p>PARA ACHARMOS A FORÇA DA GRAVIDADE NO SATÉLITE DEVEMOS APENAS DIVIDIR A ACELERAÇÃO PELA MASSA DO CORPO</p>
-        <p id="fr"></p>
-        <p>E COMO A ACELERAÇÃO POSSUI O MESMO VALOR QUE O ESCUDO...</p>
-        <p id="sh"></p>
-        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
-    </div>
-    <script src="shield.js"></script>
+    
+        <nav class="menu-navegacao3" id="inav">
+        
+            <label class="switch3" >
+                <input type="checkbox" id="idark4">
+                <span class="slider"></span>
+            </label>
+        
+                <ul>
+                <li><a class="links2" href="fisica.html">Cards</a></li>
+        
+                </ul>
+            <a href="teste.html" > <button style="margin-top: -3%; "  class="original-button4" >HOME</button></a>
+        </nav>
+        <div class="formulario3" id="entrada">
+            <div class="gradiente2">
+                <h1>Insira os Valores</h1>
+                </div>
+                <br>
+        
+            <select name="" id="planeta" onclick="sumir()">
+                <option value="nehum" id="selecionar">SELECIONAR</option>
+                <option value="SOL">SOL</option>
+                <option value="MERCURIO">MERCURIO</option>
+                <option value="VENUS">VENUS</option>
+                <option value="TERRA">TERRA</option>
+                <option value="MARTE">MARTE</option>
+                <option value="JUPTER">JUPTER</option>
+                <option value="SATURNO">SATURNO</option>
+                <option value="URANO">URANO</option>
+                <option value="NETUNO">NETUNO</option>
+                <option value="PLUTÃO">PLUTÃO</option>
+                <option value="HYGIEA">HYGIEA</option>
+                <option value="VESTA">VESTA</option>
+                <option value="CERES">CERES</option>
+                <option value="PALLAS">PALLAS</option>
+                <option value="HAUMEA">HAUMEA</option>
+                <option value="MAKEMAKE">MAKEMAKE</option>
+                <option value="ERIS">ERIS</option>
+                <option value="LUA">LUA</option>
+                <option value="IO">IO</option>
+                <option value="EUROPA">EUROPA</option>
+                <option value="GANYMEDE">GANYMEDE</option>
+                <option value="CALLISTO">CALLISTO</option>
+                <option value="ENCELADUS">ENCELADUS</option>
+                <option value="TITAN">TITAN</option>
+                <option value="TRITON">TRITON</option>
+            </select> <br>
+            <input type="number" id="massa" placeholder="MASSA"> <br>
+            <input type="number" id="altura" placeholder="ALTURA"> <br>
+            <button class="original-button3"  style="margin-top: 5%;"  onclick="realizar()">ENVIAR VALORES</button>
+        </div>
+        
+        <img class="icn1" src="forca (1).png"style="margin-top: -5%;"  id="img1-1">
+        <img class="icone2"  src="icntensao.png" style="margin-top: 2%;" id="img2-2">
+        <img src="icn4.png"  style="margin-top: -27%;" class="icn4" >
+        <img src="icn5.png" style="margin-top: -25%;" class="icn3">
+        <div id="resolucao">
+            
+            <div class="slide-container swiper">
+                <div class="slide-content ">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="peso.png">
+                                    
+                                    </div>
+                                    <h1 class="numeracao" >1</h1>
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2>Massa do Corpo  </h2>
+                                    </div>
+                            </div>
+                            
+                            <div class="texto-explicacao">
+                                <p> Essa é a massa que o corpo escolhido possui </p>
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="mc"></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="raio.png">
+                                    
+                                    </div>
+                                    <h1 class="numeracao" >2</h1>
+                                    
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2> Raio do Corpo</h2>
+                                    </div>
+                                    
+                            </div>
+                            <div class="texto-explicacao">
+                            <p>esse é o raio que o corpo possui </p>
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="rc"></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="raio.png" style="transform: rotate(-90deg);">
+                                    
+                                    </div>
+                                    <h1 class="numeracao" >3</h1>
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2>Raio da Órbita  </h2>
+                                    </div>
+                            </div>
+                            <div class="texto-explicacao">
+                                <p>PARA ACHARMOS O RAIO DA ORBITA DEVEMOS SOMAR A ALTURA DO SATÉLITE MULTIPLICADA POR 1000 COM O RAIO DO CORPO</p>
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="ro"></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="estacao-de-satelite.png">
+                                    
+                                    </div>
+                                    
+                                    <h1 class="numeracao" >4</h1>
+                                    
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2>  Velocidade do Satélite</h2>
+                                    </div>
+                            </div>
+                            <div class="texto-explicacao">
+                                <p>PARA ACHARMOS A VELOCIDADE DO SATÉLITE DEVEMOS MULTIPLICAR 6.67e-11 PELA MASSA DO CORPO E DIVIDIR ESSE VALOR PELO RAIO DA ÓRBITA ELEVADO AO QUADRADO</p>
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="vl"></p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="gravidade.png">
+                                    
+                                    </div>
+                                    <h1 class="numeracao" >5</h1>
+                                    
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2>Força da Gravidade</h2>
+                                    </div>
+                            </div>
+                            <div class="texto-explicacao">
+                                <p>PARA ACHARMOS A FORÇA DA GRAVIDADE NO SATÉLITE DEVEMOS APENAS DIVIDIR A ACELERAÇÃO PELA MASSA DO CORPO</p>
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="fr"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                    <div class="card-img">
+                                    
+                                    <img src="aceleracao.png">
+                                    
+                                    </div>
+                                    <h1 class="numeracao" >6</h1>
+                                    
+                            </div>
+                            <div class="titulo-explicacao">
+                                    <div class="gradiente2">
+                                        <h2>Aceleração</h2> 
+                                    </div>
+                            </div>
+                            <div class="texto-explicacao">
+                                <p>E COMO A ACELERAÇÃO POSSUI O MESMO VALOR QUE O ESCUDO...</p>
+                            
+                            </div>
+                            <div class="gradiente2">
+                            <div class="resultado1">
+                                    <p id="sh"></p>
+                            </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="swiper-button-next swiper-navBtn2"></div>
+                <div class="swiper-button-prev swiper-navBtn2"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+        </div>
+
+        <script src="shield.js"></script>
+        <script src="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.js"></script>
+        <script src="cards.js"></script>
+
 </body>
 </html>

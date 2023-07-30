@@ -334,6 +334,16 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card4{
+        background-image: url(satélite.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+}
 .fundo1_card3{
     
     background-image: url(newtonmassa.png);

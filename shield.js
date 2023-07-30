@@ -56,11 +56,19 @@ function sumir() {
 }
 
 function voltar() {
-    document.getElementById("entrada").style.display = "block";
+    document.getElementById("entrada").style.display = "flex";
     document.getElementById("resolucao").style.display = "none";
 
     document.getElementById("altura").value = "";
     document.getElementById("massa").value = "";
 }
 
-	
+	let $html= document.querySelector('html');
+    let $btn= document.querySelector('#idark4');
+
+    $btn.addEventListener('change' , function(){
+    $html.classList.toggle('light-mode4')
+
+
+
+    })

@@ -254,36 +254,8 @@ margin-right: 50px;
         text-transform:lowercase;
         
     }
-    .swiper-navBtn2{
-        color:var(--botao-de-ir-e-volta);
-        transition: all 0.5s;
-    }
-    .swiper-navBtn2:hover{
-    color: orangered;
-    }
-    .swiper-navBtn:before,
-    .swiper-navBtn::after{
-        font-size: 40px;
-    }
-    .swiper-button-next{
-        right: 0;
 
-        margin: -12px;
-    }
-    .swiper-button-prev{
-        left: 0;
-        margin: -12px;
-        
-    }
-    .swiper-pagination-bullet{
-        background-color:var(--cor-dos-botao-de-paginacao);
-        opacity: 6;
-    
-    }
-    .swiper-pagination-bullet-active{
-        background-color: orangered;
-        opacity: 10;
-    }
+
     @media screen and (max-width: 768px) {
         .swiper-navBtn{
             display: none;

@@ -4,81 +4,170 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
 
 </head>
+<div class="slide-container swiper">
+  <div class="slide-content ">
+      <div class="card-wrapper swiper-wrapper">
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="volume.png">
+                      
+                      </div>
+                      <h1 class="numeracao" >1</h1>
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2>Volume do Barco  </h2>
+                      </div>
+              </div>
+              
+              <div class="texto-explicacao">
+                  <p> Para O VOLUME DO BARCO MULTIPLICaMOS A ALTURA, A LARGURA, O COMPRIMENTO E DEPOIS DIVIDIMOS POR 100</p>
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p id="volume"></p> 
+              </div>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="icn.empuxo.png">
+                      
+                      </div>
+                      <h1 class="numeracao" >2</h1>
+                      
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2> Empuxo do barco</h2>
+                      </div>
+                      
+              </div>
+              <div class="texto-explicacao">
+                  <p>PARA O EMPUXO MULTIPLICAMOS A DENSIDADE DO FLUIDO A FORÇA DA GRAVIDADE E O VOLUME DO BARCO</p> 
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p id="empuxo"></p> 
+              </div>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="peso.png">
+                      
+                      </div>
+                      <h1 class="numeracao" >3</h1>
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2>massa total </h2>
+                      </div>
+              </div>
+              <div class="texto-explicacao">
+                  <p>PARA  achar TODA A MASSA NO BARCO DIVIDIMOS O EMPUXO PELA FORÇA DA GRAVIDADE</p>
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p id="massatotal"></p> 
+              </div>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="barco (1).png">
+                      
+                      </div>
+                      
+                      <h1 class="numeracao" >4</h1>
+                      
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2>  massa do barco</h2>
+                      </div>
+              </div>
+              <div class="texto-explicacao">
+                  
+                  <p>PARA ACHAR A MASSA SOMENTE DO BARCO MULTIPLICAMOS A DENSIDADE DO BARCO PELO VOLUME DO BARCO</p> 
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p id="massabarco"></p>
+              </div>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="indice-de-massa-corporal.png">
+                      
+                      </div>
+                      <h1 class="numeracao" >5</h1>
+                      
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2>massa de pessoas</h2>
+                      </div>
+              </div>
+              <div class="texto-explicacao">
+                  <p>PARA ACHAR SOMENTE A MASSA DAS PESSOAS SUBTRAIMOS A MASSA TOTAL PELA MASSA DO BARCO</p> 
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p id="massapessoas"></p> 
+                  </div>
+              </div>
+          </div>
+          <div class="card swiper-slide">
+              <div class="image-content">
+                      <div class="card-img">
+                      
+                      <img src="pessoas.png">
+                      
+                      </div>
+                      <h1 class="numeracao" >6</h1>
+                      
+              </div>
+              <div class="titulo-explicacao">
+                      <div class="gradiente2">
+                          <h2>número de pessoas </h2>
+                      </div>
+              </div>
+              <div class="texto-explicacao">
+                  <p>E PARA ACHARMOS A QUANTIDADE DE PESSOAS DIVIDIMOS A MASSA DAS PESSOAS PELA MÉDIA DAS MASSAS</p> 
+              </div>
+              <div class="gradiente2">
+              <div class="resultado1">
+                  <p  id="resposta">
+              </div>
+              </div>
+          </div>
+      
+      </div>
+  </div>
+  <div class="swiper-button-next swiper-navBtn"></div>
+  <div class="swiper-button-prev swiper-navBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
 
-<style>
-    .splide__slide img {
-  width: 50%;
-  height: auto;
-}
-body{
-    background-color: #333;
-}
-.my-carousel-progress {
-  background: #ccc;
-}
-
-.my-carousel-progress-bar {
-  background: greenyellow;
-  height: 2px;
-  transition: width 400ms ease;
-  width: 0;
-}
-
-</style>
-
+<script src="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.js"></script>
 <body >
 
 
 
-    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
-        <div class="splide__track">
-            <ul class="splide__list">
-                <li class="splide__slide">
-
-                <img  src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
-                
-                </li>
-                <li class="splide__slide">
-                        <img src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
-            
-    
-
-                </li>
-                <li class="splide__slide">
-                <img src="https://tse2.mm.bing.net/th?id=OIP.opx4k1z7ZI_DiDhsfFFWhAHaE_&pid=Api&P=0&h=180">
-
-                </li>
-            </ul>
-        </div>
-        <div class="my-carousel-progress">
-            <div class="my-carousel-progress-bar"></div>
-          </div>
-        </section>
-    </section>
-    
-    
-
-
-
-    </div>
-</body>
-<script>
-    document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '#image-carousel' ).mount();
-    } );
-    var splide = new Splide( '.splide' );
-var bar    = splide.root.querySelector( '.my-carousel-progress-bar' );
-
-// Updates the bar width whenever the carousel moves:
-splide.on( 'mounted move', function () {
-  var end  = splide.Components.Controller.getEnd() + 1;
-  var rate = Math.min( ( splide.index + 1 ) / end, 1 );
-  bar.style.width = String( 100 * rate ) + '%';
-} );
-
-splide.mount();
-
-  </script>
 </html>
