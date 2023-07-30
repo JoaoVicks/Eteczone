@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="torquel.css">
+    <title>TORQUE LIQUIDO</title>
+</head>
+<body>
+    <div id="entrada">
+
+        <select name="direction" id="di1">
+            <option value="1">ANTI-HORARIO</option>
+            <option value="-1">HORARIO</option>
+        </select>
+        <input type="number" id = "p1" placeholder="DISTANCIA 1">
+        <input type="number" id = "f1" placeholder="FORÇA 1">
+        <input type="number" id = "a1" placeholder="ANGULO 1">
+
+        <select name="direction" id="di2">
+            <option value="1">ANTI-HORARIO</option>
+            <option value="-1">HORARIO</option>
+        </select>
+        <input type="number" id = "p2" placeholder="DISTANCIA 2">
+        <input type="number" id = "f2" placeholder="FORÇA 2">
+        <input type="number" id = "a2" placeholder="ANGULO 2">
+
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PARA ACHARMOS A FORÇA 1 MULTIPLICAMOS A FORÇA APLICADA PELO SENO DO ANGULO 1</p>
+        <p id="f1x"></p>
+        <p>PARA ACHARMOS A FORÇA 2 MULTIPLICAMOS A FORÇA APLICADA PELO SENO DO ANGULO 2</p>
+        <p id="f2x"></p>
+        <p>SE A SETA ESTIVER APONTADA NO SENTIDO ANTI-HORARIO O VALOR DA DIREÇÃO É 1 CASO CONTRARIO É IGUAL -1</p>
+        <p>PARA ACHARMOS O TORQUE 1 DEVEMOS MULTIPLICAR A FORÇA 1 PELA DISTÂNCIA 1 PELA DIREÇÃO E DIVIDIR POR 100</p>
+        <p id="t1"></p>
+        <p>PARA ACHARMOS O TORQUE 2 DEVEMOS MULTIPLICAR A FORÇA 2 PELA DISTÂNCIA 2 PELA DIREÇÃO E DIVIDIR POR 100</p>
+        <p id="t2"></p>
+        <p>AGORA PARA ACHAR O TORQUE TOTAL DO SISTEMA DEVEMOS APENAS SOMAR OS TORQUES</p>
+        <p id="tt"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="torquel.js"></script>
+</body>
+</html>
