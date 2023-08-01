@@ -18,7 +18,7 @@ function realizar() {
         let TotalTorque = Torque1 + Torque2;
         let Answer = parseFloat(TotalTorque.toFixed(2));
 
-        document.getElementById("saida").style.display = "flex";
+        document.getElementById("saida").style.display = "block";
         document.getElementById("entrada").style.display = "none";
 
         document.getElementById("f1x").innerHTML = `F1X = ${Force1} × SIN(${Angle1}) = ${Force1X}`;
