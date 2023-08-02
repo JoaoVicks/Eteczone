@@ -334,6 +334,30 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card6{
+    background-image: url(simuladorvetores3d.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card5{
+    background-image: url(img\ torque.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
 .fundo1_card4{
         background-image: url(satélite.png);
     background-size: cover;
@@ -436,7 +460,7 @@ background-color: var(--fundo-card);
     }
 
 .card3:hover .capa1{
-color: orangered;
+color: hsl(16, 33%, 59%)3%, 59%)3%, 59%);
 }   
 .card-container {
     display: flex;

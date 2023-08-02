@@ -10,7 +10,7 @@ function realizar() {
         FloorAngle = Math.floor(Math.atan(z/x)*180/Math.PI);
         AirAngle = Math.floor(Math.atan(y/FloorVector)*180/Math.PI);
 
-        document.getElementById("saida").style.display = "flex";
+        document.getElementById("saida").style.display = "block";
         document.getElementById("entrada").style.display = "none";
 
         document.getElementById("HC").innerHTML = `HC = √(${x}² + ${z}²) = ${FloorVector}`;
@@ -33,4 +33,25 @@ function voltar() {
     document.getElementById("y").value = "";
     document.getElementById("z").value = "";
     
-}
+};
+function desaparecer(){
+    img1= document.getElementById('img1-4');
+    img2= document.getElementById('img2-4');
+    
+
+    img1.style.visibility='hidden';
+    img2.style.visibility='hidden';
+
+};
+
+
+let html = document.querySelector('html');
+let btn = document.querySelector('#idark6');
+
+btn.addEventListener('change' , function(){
+    html.classList.toggle('light-mode6');
+
+
+
+
+});

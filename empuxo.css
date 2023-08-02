@@ -35,7 +35,7 @@ input:focus {
 }
 body{
     background-color:var(--fundo-do-site);
-    position: relative;
+    
     min-height: 100vh;
     
    
@@ -143,7 +143,7 @@ body{
     transform: translateY(5px);
     background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
     background-size: 200% 100%;
-    animation:mov-fundo  3s alternate linear infinite;
+    animation:mov-fundo  3s alternate linear infinite ;
 }
 @keyframes mov-fundo {
     0%{
@@ -561,20 +561,24 @@ color: orangered;
     margin-top: 2%;
     margin-left: 31%;
     font-family: 'Poppins';
+
+
     
 
 }
 .buble6{
     height: 200px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     margin-top: -8%;
-    animation: mov-bublle 3s linear alternate infinite 
+    animation: mov-bublle 3s linear alternate infinite ;
+    overflow: hidden;
+    
 }
 .buble7{
     height: 190px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     margin-top: -45%;
     margin-left: 85%;
     overflow: hidden;
@@ -584,7 +588,7 @@ color: orangered;
 .buble8{
         height: 70px;
     position: absolute;
-    z-index: 1;   
+    z-index: 3;   
     animation: mov-bublle2 2s alternate linear infinite;
     margin-top: -11%;
     overflow: hidden;
@@ -593,7 +597,7 @@ color: orangered;
 .buble9{ 
     height: 65px;
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     margin-top: -30%;
     margin-left: 90%;
     overflow: hidden;

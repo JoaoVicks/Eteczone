@@ -72,3 +72,25 @@ function voltar() {
 
 
     })
+    function desaparecer(){
+        img1= document.getElementById('img1-3');
+        img2= document.getElementById('img2-3');
+        img4= document.getElementById('img4');
+        img3= document.getElementById('img3');
+
+        img1.style.visibility='hidden';
+        img2.style.visibility='hidden';
+        img3.style.visibility='hidden';
+        img4.style.visibility='hidden';
+    }
+    function reaparecer(){
+        img1= document.getElementById('img1-3');
+        img2= document.getElementById('img2-3');
+        img4= document.getElementById('img4');
+        img3= document.getElementById('img3');
+
+        img1.style.visibility='visible';
+        img2.style.visibility='visible';
+        img3.style.visibility='visible';
+        img4.style.visibility='visible';
+    }

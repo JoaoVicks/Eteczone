@@ -45,3 +45,26 @@ function voltar() {
     document.getElementById("p2").value = "";
     
 }
+
+// ligh mode anda dark mode//
+
+let html = document.querySelector('html');
+let btn = document.querySelector('#idark5');
+
+btn.addEventListener('change' , function(){
+    html.classList.toggle('light-mode6');
+
+
+
+
+});
+
+function desaparecer(){
+    img1= document.getElementById('img1-4');
+    img2= document.getElementById('img2-4');
+    
+
+    img1.style.visibility='hidden';
+    img2.style.visibility='hidden';
+
+}
