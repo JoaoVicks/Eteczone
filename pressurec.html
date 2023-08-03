@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pressurec.css">
+    <title>PRESSÃO DA COLUNA</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="RA" placeholder="RAIO DO CILINDRO">
+        <input type="number" id="DE" placeholder="DENSIDADE DO MATERIAL">
+        <input type="number" id="NA" placeholder="NIVEL DA AGUA">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO DEVEMOS TRANSFORMAR AS MEDIDAS EM CM PARA METROS</p>
+        <p> PARA ACHARMOS A AREA DO CILINDRO DEVEMOS MULTIPLICAR PI PELO SEU RAIO ELEVADO AO QUADRADO</p>
+        <p id="CA"></p>
+        <p> PARA ACHARMOS O VOLUME DO CILINDRO DEVEMOS MULTIPLICAR PI PELO SEU RAIO ELEVADO AO QUADRADO E PELA SUA ALTURA EM CM</p>
+        <p id="VO"></p>
+        <p>PARA ACHAR A MASSA MULTIPLICAMOS O VOLUME PELA DENSIDADE</p>
+        <p id="MA"></p>
+        <p>PARA ACHAR A FORÇA MULTIPLICAMOS A MASSSA PELA ACELERAÇÃO DA GRAVIDADE</p>
+        <p id="FO"></p>
+        <p>PARA ACHAR A PRESSÃO DIVIDIMOS A FORÇA PELA AREA</p>
+        <p id="PR"></p>
+        <p>E PARA ACHARMOS A PRESSÃO EM PASCAL É SÓ DIVIDIRMOS A PRESSÃO POR 1000</p>
+        <p id="PP"></p>
+
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="pressurec.js"></script>
+</body>
+</html>
