@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pascalp.css">
+    <title>PROBLEMA COM O PRINCIPIO DE PASCAL</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="F1" placeholder="FORÇA APLICADA">
+        <input type="number" id="R1" placeholder="PRIMEIRO RAIO">
+        <input type="number" id="R2" placeholder="SEGUNDO RAIO">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO DEVEMOS TRANSFORMAR AS MEDIDAS EM CM PARA METROS</p>
+        <p> PARA ACHARMOS A AREA DO PRIMEIRO TUBO DEVEMOS MULTIPLICAR PI PELO SEU RAIO ELEVADO AO QUADRADO</p>
+        <p id="A1"></p>
+        <p> PARA ACHARMOS A AREA DO SEGUNDO TUBO DEVEMOS MULTIPLICAR PI PELO SEU RAIO ELEVADO AO QUADRADO</p>
+        <p id="A2"></p>
+        <p>PARA ACHAR A PRIMEIRA PRESSÃO DIVIDIMOS A PRIMEIRA FORÇA PELA AREA DO PRIMEIRO TUBO</p>
+        <p id="P1"></p>
+        <p>COMO A PRESSÃO NO SISTEMA É IGUAL AS DUAS PRESSÕES SÃO IGUAIS</p>
+        <p id="P2"></p>
+        <p>E PARA ACHARMOS A SEGUNDA FORÇA MULTIPLICAMOS A PRESSÃO PELA AREA DO SEGUNDO TUBO</p>
+        <p id="F2"></p>
+
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="pascalp.js"></script>
+</body>
+</html>
