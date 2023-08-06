@@ -45,3 +45,33 @@ function voltar() {
     
 }
 
+//light mode and dark mode //
+
+let html$ = document.querySelector('html');
+let btn$ =  document.querySelector('#idark7');
+
+btn$.addEventListener('change', function(){
+html$.classList.toggle('light-mode7');
+
+
+
+});
+
+
+function desaparecer(){
+    var imagem1 = document.getElementById("img1-3");
+    var imagem2 = document.getElementById("img2-3");
+
+    imagem1.style.visibility = "hidden";
+    imagem2.style.visibility = "hidden";
+
+
+};
+
+function aparecer(){
+    let imagem1= document.getElementById('img1-3');
+    let imagem2= document.getElementById('img2-3');
+
+    imagem1.style.visibility = 'visible';
+    imagem2.style.visibility = 'visible ';
+}

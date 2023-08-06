@@ -334,6 +334,30 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card8{
+    background-image: url(pascal\ simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card7{
+    background-image: url(pressao\ coluna.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
 .fundo1_card6{
     background-image: url(simuladorvetores3d.png);
     background-size: cover;
