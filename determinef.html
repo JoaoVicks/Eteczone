@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="determinef.css">
+    <title>DETERMINE A DENSIDADE DO FLUIDO</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="N1" placeholder="PRIMEIRO NIVEL">
+        <input type="number" id="N2" placeholder="SEGUNDO NIVEL">
+        <input type="number" id="D2" placeholder="SEGUNDA DENSIDADE">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p> PARA ACHARMOS A PRESSÃO DO SISTEMA MULTIPLICAMOS A DENSIDADE DO FLUIDO DIREITO POR 9.8, PELO NIVEL DO FLUIDO DIREITO E DIVIDIMOS POR 1000</p>
+        <p id="PR"></p>
+        <p> PARA ACHARMOS A TAXA DE DENSIDADE É SÓ DIVIDIRMOS O NIVEL DIRETO PELO NIVEL ESQUERDO</p>
+        <p id="DR"></p>
+        <p>PARA ACHARMOS A DENSIDADE DO FLUIDO DA ESQUERDA MULTIPLICAMOS A DENSIDADE DO FLUIDO DIREITO PELA TAXA DE DENSIDADE</p>
+        <p id="D1"></p>
+
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="determinef.js"></script>
+</body>
+</html>
