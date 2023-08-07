@@ -75,3 +75,16 @@ function aparecer(){
     imagem1.style.visibility = 'visible';
     imagem2.style.visibility = 'visible ';
 }
+
+
+function CB() {
+    document.getElementById('comp').title  = 'COMPRIMENTO DO BARCO(M)'
+}
+
+function LB() {
+    document.getElementById('larg').title  = 'LARGURA DO BARCO(M)'
+}
+
+function AB() {
+    document.getElementById('alt').title  = 'ALTURA DO BARCO(M)'
+}
