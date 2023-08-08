@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pressuret.css">
+    <title>PRESSÃO TOTAL DA COLUNA</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="F1" placeholder="DENSIDADE DO PRIMEIRO LIQUIDO">
+        <input type="number" id="F2" placeholder="DENSIDADE DO SEGUNDO LIQUIDO">
+        <input type="number" id="F3" placeholder="DENSIDADE DO TERCEIRO LIQUIDO">
+        <input type="number" id="A1" placeholder="ALTURA DO PRIMEIRO LIQUIDO">
+        <input type="number" id="A2" placeholder="ALTURA DO PRIMEIRO LIQUIDO">
+        <input type="number" id="A3" placeholder="ALTURA DO PRIMEIRO LIQUIDO">
+        <input type="number" id="PSI" placeholder="PRESSÃO ATMOSFÉRICA">
+        <input type="number" id="G" placeholder="FORÇA GRAVITACIONAL">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p> PARA ACHARMOS A PRESSÃO DO PRIMEIRO LIQUIDO DEVEMOS MULTIPLICAR SUA DENSIDADE, SUA ALTURA, A FORÇA DA GRAVIDADE E DIVIDIR ESSE VALOR POR 1000</p>
+        <p id="P1"></p>
+        <p> PARA ACHARMOS A PRESSÃO DO SEGUNDO LIQUIDO DEVEMOS MULTIPLICAR SUA DENSIDADE, SUA ALTURA, A FORÇA DA GRAVIDADE E DIVIDIR ESSE VALOR POR 1000</p>
+        <p id="P2"></p>
+        <p> PARA ACHARMOS A PRESSÃO DO TERCEIRO LIQUIDO DEVEMOS MULTIPLICAR SUA DENSIDADE, SUA ALTURA, A FORÇA DA GRAVIDADE E DIVIDIR ESSE VALOR POR 1000</p>
+        <p id="P3"></p>
+        <p>PARA ACHARMOS A PRESSÃO ATMOSFÉRICA NO SISTEMA DEVEMOS APENAS MULTIPLICAR A PRESSÃO ATMOSFÉRICA POR 1000</p>
+        <p id="PATM"></p>
+        <p>E POR FIM, PARA ACHARMOS A PRESSÃO TOTAL DO SISTEMA DEVEMOS APENAS SOMAR TODAS AS PRESSÕES</p>
+        <p id="PT"></p>
+
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="pressuret.js"></script>
+</body>
+</html>
