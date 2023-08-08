@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="densidade.css">
+    <title>DETERMINE A DENSIDADE DO FLUIDO</title>
+</head>
+
+<body>
+    <div id="entrada">
+        <select name="" id="WT" >
+            <option value="" id="selecionar">SELECIONAR</option>
+            <option value="Copper">COBRE</option>
+            <option value="Aluminum">ALUMINIO</option>
+            <option value="Lead">CONDUTOR</option>
+            <option value="Silver">PRATA</option>
+            <option value="Iron">FERRO</option>
+            <option value="Gold">OURO</option>
+        </select> <br>
+        <input type="number" id="WL" placeholder="TAMANHO DO CABO">
+        <input type="number" id="WR" placeholder="RAIO DO CABO">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p>PARA ACHARMOS A AREA DO CIRCULO DO CABO DEVEMOS MULTIPLICAR π, SEU RAIO ELEVADO AO QUADRADO E DIVIDIRMOS ESSE VALOR POR 10000</p>
+        <p id="CA"></p>
+        <p>PARA ACHARMOS O VOLUME DO CABO DEVEMOS MULTIPLICAR A AREA DO CIRCULO PELO SEU COMPRIMENTO</p>
+        <p id="VW"></p>
+        <p>PARA ACHARMOS A MASSA EM KILOS DO CABO DEVEMOS MULTIPLICAR A DENSIDADE DO MATERIAL PELO VOLUME DO CABO/p>
+        <p id="MK"></p>
+        <p>E PARA CONSEGUIRMOS A MASSA EM GRAMAS DO CABO DEVEMOS APENAS DIVIDIR A MASSA EM KILOS POR 1000</p>
+        <p id="MG"></p>
+
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="densidade.js"></script>
+</body>
+
+</html>
