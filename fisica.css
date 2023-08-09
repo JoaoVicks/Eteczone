@@ -334,6 +334,19 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card9{
+    
+    background-image: url(determine\ o\ simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
 .fundo1_card8{
     background-image: url(pascal\ simulador.png);
     background-size: cover;
