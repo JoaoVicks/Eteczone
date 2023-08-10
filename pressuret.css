@@ -15,19 +15,51 @@ input:focus {
     display: none;
 }
 
-#entrada{
-    display: flex;
-    flex-direction: column;
-}
 
-input::placeholder{
-    text-align: center;
-}
+
 
 button{
     cursor: pointer;
 }
 
-input{
+
+.formulario5{
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 10px 45px;
+    backdrop-filter: blur(5px); background-color:var(--cor-de-fundo-form); border-radius: 38px;
+    box-shadow: 0px 35px 68px 0px rgba(255, 69, 0, 0.5), inset 0px -12px 16px 0px rgba(255, 69, 0, 0.6);
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10%;
+    height: 580px;
+    
+}
+.formulario5 input{
+    border-left: none;
+    border-right: none;
+    font-family: 'Poppins';
+    border-top: none;
+    background-color: transparent;
+    border-bottom: var(--linha-input-antes-hover);
+    padding-left: 2%;
+    transition: all 0.7s;
+    margin-left:5%;
+    margin-top: 6%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 350px;
+    
+}
+.formulario5 input:focus{
+    border-bottom: 3px solid #ff4500;
+}
+.formulario5 h1{
+    font-family: 'Poppins';
     text-align: center;
+    padding:5px;
+    
 }

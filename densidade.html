@@ -5,11 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="densidade.css">
+    <link rel="stylesheet" href="shield.css">
+    <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="pressurec.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
     <title>DETERMINE A DENSIDADE DO FLUIDO</title>
 </head>
 
 <body>
-    <div id="entrada">
+    <nav class="menu-navegacao3" id="inav">
+        
+        <label class="switch3" >
+            <input type="checkbox" id="idark11">
+            <span class="slider"></span>
+        </label>
+    
+            <ul>
+            <li><a class="links2" href="fisica.html">Cards</a></li>
+    
+            </ul>
+        <a href="teste.html" > <button style="margin-top: -3%; "  class="original-button4" >HOME</button></a>
+    </nav> 
+
+    <div id="entrada" class="formulario3" style="height: 340px; margin-top: 10%;">
+        <div class="gradiente2" style="margin-bottom: 10%;">
+        <h1>Insira os Valores</h1>
+        </div>
         <select name="" id="WT" >
             <option value="" id="selecionar">SELECIONAR</option>
             <option value="Copper">COBRE</option>
@@ -18,24 +41,149 @@
             <option value="Silver">PRATA</option>
             <option value="Iron">FERRO</option>
             <option value="Gold">OURO</option>
-        </select> <br>
+        </select> 
         <input type="number" id="WL" placeholder="TAMANHO DO CABO">
         <input type="number" id="WR" placeholder="RAIO DO CABO">
-        <button onclick="enviar()">ENVIAR VALORES</button>
+        <button class="original-button3" style="margin-top:10% ;" onclick="enviar() ; desaparecer()">ENVIAR VALORES</button>
     </div>
+    <img class="icn1" src="forca (1).png"style="margin-top: -5%;"  id="img1-3">
+    <img class="icone2"  src="icntensao.png" style="margin-top: 2%;" id="img2-3">
+    <img src="icn4.png"  style="margin-top: -27%;" class="icn4"  id="img3">
+    <img src="icn5.png" style="margin-top: -25%;" class="icn3" id="img4">
+    
     <div id="saida">
-        <p>PARA ACHARMOS A AREA DO CIRCULO DO CABO DEVEMOS MULTIPLICAR π, SEU RAIO ELEVADO AO QUADRADO E DIVIDIRMOS ESSE VALOR POR 10000</p>
-        <p id="CA"></p>
-        <p>PARA ACHARMOS O VOLUME DO CABO DEVEMOS MULTIPLICAR A AREA DO CIRCULO PELO SEU COMPRIMENTO</p>
-        <p id="VW"></p>
-        <p>PARA ACHARMOS A MASSA EM KILOS DO CABO DEVEMOS MULTIPLICAR A DENSIDADE DO MATERIAL PELO VOLUME DO CABO/p>
-        <p id="MK"></p>
-        <p>E PARA CONSEGUIRMOS A MASSA EM GRAMAS DO CABO DEVEMOS APENAS DIVIDIR A MASSA EM KILOS POR 1000</p>
-        <p id="MG"></p>
+        <div class="gradiente2">
+            <h1 class="title-resolucao" style="margin-top: 10% "> Passo a passo</h1>
+            </div> 
+        <div class="slide-container2 swiper" style="margin-top: 2%;">
+            <div class="slide-content " >
+                <div class="card-wrapper swiper-wrapper" >
+                    <div class="card swiper-slide" >
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                    <img src="circulo.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >1</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>Área do Circulo</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHARMOS A AREA DO CIRCULO DO CABO DEVEMOS MULTIPLICAR π, SEU RAIO ELEVADO AO QUADRADO E DIVIDIRMOS ESSE VALOR POR 10000</p>
+            
+                            
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                        <p id="CA"></p>  
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="volume.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >2</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>Volume</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHARMOS O VOLUME DO CABO DEVEMOS MULTIPLICAR A AREA DO CIRCULO PELO SEU COMPRIMENTO</p>
+                            
+                            </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="VW"></p>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="peso.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >3</h1>
+                                
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2> Massa do Cabo (kg)</h2>
+                                </div>
+                                
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>PARA ACHARMOS A MASSA EM KILOS DO CABO DEVEMOS MULTIPLICAR A DENSIDADE DO MATERIAL PELO VOLUME DO CABO/p>
+                            
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="MK"></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                                <div class="card-img">
+                                
+                                <img src="atmosfera.png">
+                                
+                                </div>
+                                <h1 class="numeracao" >4</h1>
+                        </div>
+                        <div class="titulo-explicacao">
+                                <div class="gradiente2">
+                                    <h2>Massa em Gramas </h2>
+                                </div>
+                        </div>
+                        <div class="texto-explicacao">
+                            <p>E PARA CONSEGUIRMOS A MASSA EM GRAMAS DO CABO DEVEMOS APENAS DIVIDIR A MASSA EM KILOS POR 1000</p>
+                            
+                        </div>
+                        <div class="gradiente2">
+                        <div class="resultado1">
+                            <p id="MG"></p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <br>
+                <div class="swiper-button-next swiper-navBtn3  "></div>
+            
+                <div class="swiper-button-prev swiper-navBtn3"></div>
+                <br>
+            </div>
+            
+            
+            <div class="swiper-pagination"></div>
+                
+        </div>
 
-        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+        <button class="btn-nvresult" onclick="voltar() ; aparecer()">INSERIR NOVOS VALORES</button>
     </div>
+    
+
     <script src="densidade.js"></script>
+    <script src="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.js"></script>
+    <script src="cards3.js"></script>
 </body>
 
 </html>
