@@ -2,6 +2,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     
 }
 
@@ -68,7 +69,7 @@ a{
     top: 0;
     left: 0;
     
-    width: 92%;
+    width: 100%;
     transition: 1s;
     z-index: 3;
     
@@ -664,9 +665,10 @@ background-color: var(--fundo-card);
   
   @media  (max-width:500px){
 
-    body {
+    body,html {
         overflow-x: hidden;
-       
+        
+    
     }
 
     .fundo-fisica{
@@ -675,7 +677,7 @@ background-color: var(--fundo-card);
     .title2-2{
         margin-top: 8%;
         font-size: 100px;
-        margin-left: -45% ;
+        margin-left: -40% ;
     }
 
     .gradiente3{
@@ -690,8 +692,8 @@ background-color: var(--fundo-card);
         background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
         background-size: 500% 100%;
         animation: mov-degrade 3s linear infinite alternate;
-        width: 1000%;
-        margin-left: -200%;
+        width: 780px;
+        margin-left: -380px;
       
 
     }
@@ -719,8 +721,8 @@ background-color: var(--fundo-card);
         width:140px ;
         position: absolute;
         z-index: 2;
-        margin-left: 30%;
-        margin-top: -48%;
+        margin-left: 35%;
+        margin-top: -56%;
         animation: atomo2 10s infinite  linear;
         overflow:hidden;
     }
@@ -742,7 +744,7 @@ background-color: var(--fundo-card);
 }
       .menu-navegacao2 ul {
         list-style-type: none;
-        margin-left: 1% ;
+        margin-left: 14% ;
         }
         
         
@@ -755,7 +757,7 @@ background-color: var(--fundo-card);
 
         .switch2 {
             display: block;
-            --width-of-switch: 2.5em;
+            --width-of-switch: 2.6em;
             --height-of-switch: 2em;
             /* size of sliding icon -- sun and moon */
             --size-of-icon: 1.4em;
@@ -795,7 +797,7 @@ background-color: var(--fundo-card);
             top: 0;
             left: 0;
             
-            max-width: 73%;
+            
             transition: 1s;
             z-index: 3;
             
@@ -889,4 +891,8 @@ background-color: var(--fundo-card);
             
             
         }
+        .fundo-cards.rolagem2{
+            padding-top: 50%;
+            background-color: var(--fundo-card);
+            }
   }
