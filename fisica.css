@@ -73,18 +73,42 @@ a{
     z-index: 3;
     
 }
+.title2-2{
+    text-align: center ;
+    font-family: 'Poppins', sans-serif;
+    font-size: 200px;
+    margin-top: 14%;
+    
+}
+.gradiente_5{
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 400% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.gradiente3{
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 400% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
 
 
 .menu-navegacao2 ul {
 list-style-type: none;
-margin: 0;
-padding: 0;
+margin-left: 25%;
 }
 
 
 .menu-navegacao2 li {
 display: inline-block;
-margin-right: 110px;
+margin-right: 70px;
 
 }
 .original-button2.rolagem2{
@@ -112,8 +136,8 @@ margin-right: 110px;
     border: 2px solid var(--botao-home);
     transition: 0.3s;
     background-color: transparent;
-    margin-left: 78%;
-    margin-top: -3%;
+    margin-left: 35%;
+    
 }
 
 
@@ -131,6 +155,17 @@ margin-right: 110px;
   font-weight: 400;
   position: relative;
 }
+.links3{
+    text-decoration: none;
+    color: var(--links-menu-navegacao);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+    padding: 5px ;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+  }
+
 .links::after{
  content: " ";
  width: 0%;
@@ -179,13 +214,7 @@ border-radius: 3px;
     background-color: #ff4500;
     color: white;
 }
-.title2-2{
-    text-align: center ;
-    font-family: 'Poppins', sans-serif;
-    font-size: 200px;
-    margin-top: 14%;
-    
-}
+
 .title3{
     text-align: center ;
     font-family: 'Poppins', sans-serif;
@@ -200,6 +229,7 @@ border-radius: 3px;
     background-color:var(--fundo-fisica);
     position: relative;
     overflow: hidden;
+    
 }
 .atomo{
     width: 220px;
@@ -347,6 +377,7 @@ background-color: var(--fundo-card);
 
 
 }
+
 .fundo1_card10{
     
     background-image: url(total\ pressao.png);
@@ -523,15 +554,13 @@ background-color: var(--fundo-card);
 
     }
 
-.card3:hover .capa1{
-color: hsl(16, 33%, 59%)3%, 59%)3%, 59%);
-}   
+
 .card-container {
     display: flex;
     justify-content:center;
     align-items: center;
-    flex-direction: row;
-    margin-top: 2%;
+    flex-direction:row;
+    margin-top: 3%;
     
 }
 .card-container2 {
@@ -629,4 +658,227 @@ color: hsl(16, 33%, 59%)3%, 59%)3%, 59%);
     background: #303136;
     /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
     box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+  
+  @media  (max-width:500px){
+
+    .fundo-fisica{
+        width: 50%;
+    }
+    .title2-2{
+        margin-top: 8%;
+        font-size: 140px;
+        margin-left: -35% ;
+    }
+
+    .gradiente3{
+        background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+        background-size: 500% 100%;
+        animation: mov-degrade 3s linear infinite alternate;
+        width: 300%;
+        margin-left: -80%;
+
+    }
+    .gradiente_5{
+        background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+        background-size: 500% 100%;
+        animation: mov-degrade 3s linear infinite alternate;
+        width: 550%;
+        margin-left: -200%;
+      
+
+    }
+    .title3{
+        text-align: center ;
+        font-family: 'Poppins', sans-serif;
+        font-size: 45px;
+        margin-left: -1%;
+        
+        margin-top: -20%;
+    }
+    
+    .atomo{
+        width: 160px;
+        position: absolute;
+        z-index: 2;
+        margin-top: -7%;
+        margin-left: -45%;
+        animation: atomo1 10s infinite  linear;
+        overflow: hidden;
+        
+    }
+
+    .atomo2{
+        width:140px ;
+        position: absolute;
+        z-index: 2;
+        margin-left: 30%;
+        margin-top: -48%;
+        animation: atomo2 10s infinite  linear;
+        overflow:hidden;
+    }
+    
+    .cps2{
+        display: none;
+    }
+    .links , .links3{
+        text-decoration: none;
+        color: var(--links-menu-navegacao);
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: -20px ;
+        font-size: 25px;
+        font-weight:300;
+        position: relative;
+      }
+.links3{
+    display: none;
+}
+      .menu-navegacao2 ul {
+        list-style-type: none;
+        margin-left:-12% ;
+        }
+        
+        
+        .menu-navegacao2 li {
+        display: inline-block;
+        margin-right: 10px;
+        
+        }
+
+        .switch2 {
+            display: block;
+            --width-of-switch: 3.5em;
+            --height-of-switch: 2em;
+            /* size of sliding icon -- sun and moon */
+            --size-of-icon: 1.4em;
+            /* it is like a inline-padding of switch */
+            --slider-offset: 0.3em;
+            position: absolute;
+            width: var(--width-of-switch);
+            height: var(--height-of-switch);
+            margin-left: -2%;
+            z-index:4 ;
+            
+            
+          }
+          .original-button2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-decoration: none;
+            color: var(--botao-home);
+            font-size: 18px;
+            border-radius: 20px;
+            width: 130px;
+            height: 35px;
+            transition: all 1s;
+            border: 2px solid var(--botao-home);
+            transition: 0.3s;
+            background-color: transparent;
+            margin-left: -15%
+            ;
+        }
+        .menu-navegacao2 {
+
+            padding: 20px 4%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            
+            width: 92%;
+            transition: 1s;
+            z-index: 3;
+            
+        }
+        .card-container {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction:column;
+            margin-top: 3%;
+            
+        }
+        .card-container2 {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 1%;
+            
+        }
+        .card1{
+            background:var(--cor-dos-cards-antes-do-hover);
+            box-shadow: var(--sombra-dos-cards-antes-do-hover);
+        
+            backdrop-filter: blur( 8px );
+            -webkit-backdrop-filter: blur( 8px );
+            border-radius: 10px;
+            
+            border-radius: 2px;
+            max-width: 350px;
+            padding-bottom: -1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            padding-top: 30px;
+            cursor: pointer;
+            text-align: center;
+            opacity: var(--opacidade-dos-cards);
+            transition: all 2s;
+            margin: 30px;
+            
+        }
+        .card2{
+            background:var(--cor-dos-cards-antes-do-hover);
+            box-shadow: var(--sombra-dos-cards-antes-do-hover);
+        
+            backdrop-filter: blur( 8px );
+            -webkit-backdrop-filter: blur( 8px );
+            border-radius: 10px;
+        
+            border-radius: 2px;
+            max-width: 350px;
+            padding-bottom: -1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            padding-top: 30px;
+            cursor: pointer;
+            text-align: center;
+            opacity: var(--opacidade-dos-cards);
+            transition: all 2s;
+            margin: 30px;
+            
+            
+            
+        }
+        
+        .card3{
+            background:var(--cor-dos-cards-antes-do-hover);
+            box-shadow: var(--sombra-dos-cards-antes-do-hover);
+        
+            backdrop-filter: blur( 8px );
+            -webkit-backdrop-filter: blur( 8px );
+            border-radius: 10px;
+        
+            border-radius: 2px;
+            max-width: 350px;
+            padding-bottom: -1%;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: center;
+            padding-top: 30px;
+            cursor: pointer;
+            text-align: center;
+            opacity: var(--opacidade-dos-cards);
+            transition: all 2s;
+            margin: 30px;
+            
+            
+        }
   }

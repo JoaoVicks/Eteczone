@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">Primeira nota</label>
+    <input id="input" type="number">
+    <label for="input2">Segunda nota</label>
+    <input id="input2" type="number">
+    <button onclick="calcular()">Calcular média</button>
+    <p id="resultado"></p>
+    <br>
+    <br>
+    <br>
+    <h1>em qual periodo vc estuda?</h1>
+
+    <label for="manha">Manhã</label>
+    <input id="manha" type="radio" name="horario" value="M">
+    <label for="tarde">Tarde</label>
+    <input id="tarde" type="radio" name="horario" value="T">
+    <label for="noite">Noite</label>
+    <input id="noite" type="radio" name="horario" value="N">
+    <button onclick="msg()">Mostrar Saudação</button>
+
+ 
+<br>
+<br>
+<br>
+
+
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p> insira seu salário e calcule o reajuste que ele sofrerá </p>
+    <input id="sal" type="number">
+    <button onclick="reajustar()">calcule o reajuste </button>
+    <h1 id="result"></h1>
+    <h1 id="result2"></h1>
+    <h1 id="result3"></h1>
+    <h1 id="result4"></h1>
+    <script>
+        function calcular() {
+            let nota1 = parseFloat(document.getElementById('input').value);
+            let nota2 = parseFloat(document.getElementById('input2').value);
+
+            let media = (nota1 + nota2) / 2;
+
+            document.getElementById('resultado').innerHTML = "Média: " + media;
+
+            if (media >= 7) {
+                alert("VOCÊ FOI APROVADO! Sua média é: " + media);
+            } else {
+                alert("VOCÊ FOI REPROVADO! Sua média é: " + media);
+            }
+        }
+    
+        function msg() {
+            let dia = document.querySelector('input[name="horario"]:checked').value;
+
+            if (dia === "M") {
+                alert("Bom dia!");
+            } else if (dia === "T") {
+                alert("Boa tarde!");
+            } else if (dia === "N") {
+                alert("Boa noite!");
+            }
+        };
+        function reajustar(){
+        let salario  = parseFloat(document.getElementById('sal').value);
+        
+        
+        if (salario <= 280){
+            let percentual = "20%";
+            let calculo = 0.2 * salario;
+            let calculoFinal = calculo + salario;
+
+            let mostrar2 = document.getElementById('result2').innerHTML = " O percentual de aumento foi de   :" + percentual;
+            let mostrar = document.getElementById('result').innerHTML = "O valor do aumento foi de :  "+ calculo;
+            let mostrar3 = document.getElementById('result3').innerHTML = "O salario antes do reajuste: " + salario;
+            let mostrar4 = document.getElementById('result4').innerHTML = "O salario depois do reajuste foi de : " + calculoFinal;
+        };
+
+        if (salario > 280 && salario < 700) {
+    let percentual = "15%";
+    let calculo = 0.15 * salario;
+    let calculoFinal = calculo + salario;
+
+    document.getElementById('result2').innerHTML = "O percentual de aumento foi de: " + percentual;
+    document.getElementById('result').innerHTML = "O valor do aumento foi de: " + calculo;
+    document.getElementById('result3').innerHTML = "O salario antes do reajuste: " + salario;
+    document.getElementById('result4').innerHTML = "O salario depois do reajuste foi de: " + calculoFinal;
+};
+
+if (salario >= 700 && salario < 1500) {
+    let percentual = "10%";
+    let calculo = 0.1 * salario;
+    let calculoFinal = calculo + salario;
+
+    document.getElementById('result2').innerHTML = "O percentual de aumento foi de: " + percentual;
+    document.getElementById('result').innerHTML = "O valor do aumento foi de: " + calculo;
+    document.getElementById('result3').innerHTML = "O salario antes do reajuste: " + salario;
+    document.getElementById('result4').innerHTML = "O salario depois do reajuste foi de: " + calculoFinal;
+};
+
+if (salario >= 1500) {
+    let percentual = "5%";
+    let calculo = 0.05 * salario;
+    let calculoFinal = calculo + salario;
+
+    document.getElementById('result2').innerHTML = "O percentual de aumento foi de: " + percentual;
+    document.getElementById('result').innerHTML = "O valor do aumento foi de: " + calculo;
+    document.getElementById('result3').innerHTML = "O salario antes do reajuste: " + salario;
+    document.getElementById('result4').innerHTML = "O salario depois do reajuste foi de: " + calculoFinal;
+}
+        
+        }
+
+        
+
+        
+
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
