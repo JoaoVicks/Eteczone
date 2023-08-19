@@ -95,6 +95,8 @@ a{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+   
+
 }
 
 
@@ -662,28 +664,33 @@ background-color: var(--fundo-card);
   
   @media  (max-width:500px){
 
+    body {
+        overflow-x: hidden;
+       
+    }
+
     .fundo-fisica{
-        width: 50%;
+        
     }
     .title2-2{
         margin-top: 8%;
-        font-size: 140px;
-        margin-left: -35% ;
+        font-size: 100px;
+        margin-left: -45% ;
     }
 
     .gradiente3{
         background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
         background-size: 500% 100%;
         animation: mov-degrade 3s linear infinite alternate;
-        width: 300%;
-        margin-left: -80%;
+        width: 780px;
+        margin-left: -240px;
 
     }
     .gradiente_5{
         background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
         background-size: 500% 100%;
         animation: mov-degrade 3s linear infinite alternate;
-        width: 550%;
+        width: 1000%;
         margin-left: -200%;
       
 
@@ -702,7 +709,7 @@ background-color: var(--fundo-card);
         position: absolute;
         z-index: 2;
         margin-top: -7%;
-        margin-left: -45%;
+        margin-left: -75%;
         animation: atomo1 10s infinite  linear;
         overflow: hidden;
         
@@ -726,7 +733,7 @@ background-color: var(--fundo-card);
         color: var(--links-menu-navegacao);
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: -20px ;
-        font-size: 25px;
+        font-size: 23px;
         font-weight:300;
         position: relative;
       }
@@ -735,19 +742,20 @@ background-color: var(--fundo-card);
 }
       .menu-navegacao2 ul {
         list-style-type: none;
-        margin-left:-12% ;
+        margin-left: 1% ;
         }
         
         
         .menu-navegacao2 li {
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 1px;
+
         
         }
 
         .switch2 {
             display: block;
-            --width-of-switch: 3.5em;
+            --width-of-switch: 2.5em;
             --height-of-switch: 2em;
             /* size of sliding icon -- sun and moon */
             --size-of-icon: 1.4em;
@@ -770,14 +778,14 @@ background-color: var(--fundo-card);
             color: var(--botao-home);
             font-size: 18px;
             border-radius: 20px;
-            width: 130px;
+            width: 90px;
             height: 35px;
             transition: all 1s;
             border: 2px solid var(--botao-home);
             transition: 0.3s;
             background-color: transparent;
-            margin-left: -15%
-            ;
+            margin-left: -4%;
+            
         }
         .menu-navegacao2 {
 
@@ -787,7 +795,7 @@ background-color: var(--fundo-card);
             top: 0;
             left: 0;
             
-            width: 92%;
+            max-width: 73%;
             transition: 1s;
             z-index: 3;
             
