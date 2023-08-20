@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="preda.css">
+    <title>PEDRA👍</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="mass" placeholder="MASSA DA PEDRA"> 
+        <input type="number" id="dist" placeholder="DISTANCIA">
+        <input type="number" id="temp" placeholder="TEMPO"> 
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PARA ACHAR A VELOCIDADE DEVEMOS DIVIDIR A DISTANCIA PELO TEMPO</p>
+        <p id="speed"></p>
+        <p>E PARA ACHARMOS A ENERGIA CINÉTICA DEVEMOS MULTIPLICAR 0,5 PELA MASSA DA PEDRA E PELA VELOCIDADE ELEVADA AO QUADRADO</p>
+        <p id="cinet"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="preda.js"></script>
+</body>
+</html>

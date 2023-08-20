@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zepulandos.css">
+    <title>ZÉ PULANDO SIMPLES</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="mass" placeholder="MASSA DO ZÉ"> 
+        <input type="number" id="ang" placeholder="ANGULO DA RAMPA">  
+        <input type="number" id="cinet" placeholder="ENERGIA CINÉTICA"> 
+        <input type="number" id="grav" placeholder="ACELERAÇÃO DA GRAVIDADE"> 
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO VAMOS TRANFORMAR O ÂNGULO DA RAMPA EM RADIANO</p>
+        <p id="ang2r"></p>
+        <p>PARA ACHARMOS A VELOCIDADE NO PULO DEVEMOS FAZER A RAIZ QUADRADA DE 2 MULTIPLICADO PELA ENERGIA CINÉTICA NO PULO DIVIDIDA PELA MASSA DO ZÉ</p>
+        <p id="velop"></p>
+        <p>PARA ACHARMOS VELOCIDADE DO EIXO X DEVEMOS MULTIPLICAR A VELOCIDADE PELO SENO DO ANGULO DA RAMPA EM RADIANO</p>
+        <p id="velox"></p>
+        <p>PARA ACHARMOS VELOCIDADE DO EIXO Y DEVEMOS MULTIPLICAR A VELOCIDADE PELO COSSENO DO ANGULO DA RAMPA EM RADIANO</p>
+        <p id="veloy"></p>
+        <p>PARA ACHARMOS O TEMPO DEVEMOS MULTIPLICA 2 PELA VELOCIDADE DO EIXO Y E DIVIDIR PELA FORÇA DA GRAVIDADE</p>
+        <p id="tempo"></p>
+        <p>E POR FIM PARA ACHARMOS A DISTANCIA DEVEMOS MULTIPLICAR O TEMPO NO AR PELA VELOCIDADE DO EIXO X</p>
+        <p id="distt"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="zepulandos.js"></script>
+</body>
+</html>

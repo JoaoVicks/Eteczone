@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trabalhoa.css">
+    <title>TRABALHO COM ÂNGOLU</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="angf" placeholder="ANGULO DA FORÇA">
+        <input type="number" id="coef" placeholder="COEFICIENTE DE ATRITO">
+        <input type="number" id="actf" placeholder="FORÇA">
+        <input type="number" id="masst" placeholder="MASSA DA MESA">
+        <input type="number" id="distt" placeholder="DISTÂNCIA PERCORRIDA">
+        <button onclick="enviar()">ENVIAR VALORES</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO VAMOS TRANFORMAR O ÂNGULO DA FORÇA EM RADIANO</p>
+        <p id="angr"></p>
+        <p>PARA ACHARMOS A FORÇA DA GRAVIDADE DEVEMOS MULTIPLICAR A MASSA NA MESA PELA ACELERAÇÃO GRAVITACIONAL</p>
+        <p id="forceg"></p>
+        <p>AGORA VAMOS TRANSFORMAR A DISTÂNCIA DE CENTÍMETROS PARA METROS</p>
+        <p id="distd"></p>
+        <p>PARA ACHARMOS A FORÇA DE TENSÃO NO EIXO X DEVEMOS MULTIPLICAR A FORÇA APLICADA PELO SENO DO ÂNGULO DA FORÇA</p>
+        <p id="forcetx"></p>
+        <p>PARA ACHARMOS A FORÇA DE TENSÃO NO EIXO Y DEVEMOS MULTIPLICAR A FORÇA APLICADA PELO COSSENO DO ÂNGULO DA FORÇA</p>
+        <p id="forcety"></p>
+        <p>AGORA PARA ACHARMOS A FORÇA NO EIXO X DEVEMOS SUBTRAIR A FORÇA DA GRAVIDADE PELA FORÇA DE TENSÃO Y</p>
+        <p id="forcey"></p>
+        <p>PARA ACHARMOS A FORÇA DE ATRITO MULTIPLICAMOS O COEFICIENTE DE ATRITO PELA FORÇA Y</p>
+        <p id="forcef"></p>
+        <p>AGORA PARA ACHARMOS A FORÇA NO EIXO X DEVEMOS SUBTRAIR A FORÇA DE TENSÃO X PELA FORÇA DE ATRITO</p>
+        <p id="forcex"></p>
+        <p>PARA ACHARMOS A ACELERAÇÃO MULTIPLICAMOS A FORÇA X PELA MASSA EM CIMA DA MESA</p>
+        <p id="xlr8"></p>
+        <p>AGORA PARA ACHARMOS O TRABALHO FEITO PELA TENSÃO É SÓ MULTIPLICARMOS A FORÇA DA TENSÃO X PELA DISTANCIA PERCORRIDA(em metros)</p>
+        <p id="workt"></p>
+        <p>AGORA PARA ACHARMOS O TRABALHO FEITO PELO ATRITO É SÓ MULTIPLICARMOS A FORÇA DE ATRITO PELA DISTANCIA PERCORRIDA(em metros)</p>
+        <p id="workf"></p>
+        <p>E POR FIM, PARA ACHARMOS O TRABALHO TOTAL DEVEMOS APENAS SUBTRAIR O TRABALHO DA TENSÃO PELO TRABALHO DO ATRITO</p>
+        <p id="worktt"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="trabalhoa.js"></script>
+</body>
+</html>

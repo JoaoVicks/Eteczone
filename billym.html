@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="billym.css">
+    <title>BILLY FAZENDO MERDA</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="mass" placeholder="MASSA DO BILLY"> 
+        <input type="number" id="dist" placeholder="DISTANCIA DO MORRO">
+        <input type="number" id="ang" placeholder="ANGULO DO MORRO">   
+        <input type="number" id="grav" placeholder="ACELERAÇÃO DA GRAVIDADE"> 
+        <input type="number" id="atri" placeholder="COEFICIENTE DE ATRITO"> 
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO VAMOS TRANFORMAR O ÂNGULO DO MORRO EM RADIANO</p>
+        <p id="angr"></p>
+        <p>PARA ACHARMOS O DESLOCAMENTO VERTICAL MULTIPLICAMOS A DISTANCIA DO MORRO PELO SENO DO ANGULO EM RADIANO</p>
+        <p id="desv"></p>
+        <p>A ENERGIA POTENCIAL GRAVITACIONAL VAI SER A ALTURA DO MORRO MULTIPLICADA PELA MASSA DO BILLY E PELA ACELERAÇÃO DA GRAVIDADE</p>
+        <p id="potg"></p>
+        <p>A FORÇA NORMAL VAI SER IGUAL A MASSA DO BILLY MULTIPLICADA PELA ACELERAÇÃO GRAVITACIONAL E PELO SENO DO ANGULO DO MORRO</p>
+        <p id="forcen"></p>
+        <p>A FORÇA GRAVITACIONAL VAI SER IGUAL A FORÇA NORMAL</p>
+        <p id="forceg"></p>
+        <p>A FRICCÇÃO NO MORRO VAI SER O COEFICIENTE DE ATRITO MULTIPLICADO PELA FORÇA GRAVITACIONAL</p>
+        <p id="fricm"></p>
+        <p>A ACELERAÇÃO VAI SER A FORÇA GRAVITACIONAL MENOS O ATRITO NO MORRO E TUDO ISSO DIVIDIDO PELA MASSA DO BILLY</p>
+        <p id="xlr8"></p>
+        <p>O TRABALHO NO MORRO VAI SER IGUAL A FRICÇÃO NO MORRO MULTIPLICADA PELA DISTANCIA DO MORRO</p>
+        <p id="trabm"></p>
+        <p>PARA ACHARMOS A ENERGIA CINÉTICA DURANTE DEVEMOS SUBTRAIR A ENERGIA POTENCIAL GRAVITACIONAL PELO TRABALHO EXERCIDO</p>
+        <p id="cinep"></p>
+        <p>AGORA PARA ACHARMOS A VELOCIDADE NO PULO DEVEMOS FAZER A RAIZ QUADRADA DE 2 MULTIPLICADO PELA ENERGIA CINÉTICA DIVIDIDA PELA MASSA DO BILLY</p>
+        <p id="velop"></p>
+        <p>A FORÇA NORMAL NO CHÃO VAI SER IGUAL A MASSA DO BILLY MULTIPLICADA PELA ACELERAÇÃO GRAVITACIONAL</p>
+        <p id="forcenc"></p>
+        <p>A FRICÇÃO NO CHÃO VAI SER IGUAL A FORÇA NORMAL NO CHÃO MULTIPLICADA PELO COEFICIENTE DE ATRITO</p>
+        <p id="fricc"></p>
+        <p>E POR FIM PARA ACHARMOS A DISTANCIA DEVEMOS MULTIPLICAR A ENERGIA CINÉTICA PELA FRICÇÃO NO CHÃO</p>
+        <p id="distt"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="billym.js"></script>
+</body>
+</html>

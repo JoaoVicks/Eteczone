@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="zepulando.css">
+    <title>ZÉ PULANDO</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="mass" placeholder="MASSA DO ZÉ"> 
+        <input type="number" id="dist1" placeholder="DISTANCIA DO MORRO">
+        <input type="number" id="ang1" placeholder="ANGULO DO MORRO">  
+        <input type="number" id="dist2" placeholder="DISTANCIA DA RAMPA"> 
+        <input type="number" id="ang2" placeholder="ANGULO DA RAMPA"> 
+        <input type="number" id="grav" placeholder="ACELERAÇÃO DA GRAVIDADE"> 
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO VAMOS TRANFORMAR O ÂNGULO DO MORRO EM RADIANO</p>
+        <p id="angr"></p>
+        <p>PARA ACHARMOS O DESLOCAMENTO VERTICAL MULTIPLICAMOS A DISTANCIA ATÉ O PÉ DO MORRO PELO SENO DO ANGULO EM RADIANO</p>
+        <p id="desv"></p>
+        <p>A ENERGIA POTENCIAL GRAVITACIONAL VAI SER A ALTURA DO MORRO MULTIPLICADA PELA MASSA DO ZÉ E PELA ACELERAÇÃO DA GRAVIDADE</p>
+        <p id="potg"></p>
+        <p>O TRABALHO REALIZADO VAI SER IGUAL A DISTANCIA DO PÉ DO MORRO MULTIPLICADA PELO ATRITO(que nesse caso è 0)</p>
+        <p id="trabm"></p>
+        <p>AGORA PARA ACHARMOS A ENERGIA CINÉTICA NO PÉ DO MORRO DEVEMOS SUBTRAIR A ENERGIA POTENCIAL GRAVITACIONAL PELO TRABALHO REALIZADO</p>
+        <p id="cinet"></p>
+        <p>AGORA VAMOS TRANFORMAR O ÂNGULO DA RAMPA EM RADIANO</p>
+        <p id="ang2r"></p>
+        <p>AGORA PARA ACHARMOS A ALTURA DA RAMPA DEVEMOS FAZER A DISTANCIA ATÉ O TOPO MULTIPLICADA PELO SENO DO ANGULA DA RAMPA EM RADIANO</p>
+        <p id="rampa"></p>
+        <p>A ENERGIA PERDIDA VAI SER IGUAL A MASSA DO ZÉ MULTIPLICADA PELA ALTURA DA RAMPA E PELA FORÇA DA GRAVIDADE</p>
+        <p id="perde"></p>
+        <p>PARA ACHARMOS A ENERGIA CINÉTICA DURANTE O PULO DEVEMOS SUBTRAIR A ENERGIA CINÉTICA DO PÉ DO MORRO PELA ENERGIA PERDIDA</p>
+        <p id="cinep"></p>
+        <p>AGORA PARA ACHARMOS A VELOCIDADE NO PULO DEVEMOS FAZER A RAIZ QUADRADA DE 2 MULTIPLICADO PELA ENERGIA CINÉTICA NO PULO DIVIDIDA PELA MASSA DO ZÉ</p>
+        <p id="velop"></p>
+        <p>PARA ACHARMOS VELOCIDADE DO EIXO X DEVEMOS MULTIPLICAR A VELOCIDADE PELO SENO DO ANGULO DA RAMPA EM RADIANO</p>
+        <p id="velox"></p>
+        <p>PARA ACHARMOS VELOCIDADE DO EIXO Y DEVEMOS MULTIPLICAR A VELOCIDADE PELO COSSENO DO ANGULO DA RAMPA EM RADIANO</p>
+        <p id="veloy"></p>
+        <p>PARA ACHARMOS O TEMPO DEVEMOS MULTIPLICA 2 PELA VELOCIDADE DO EIXO Y E DIVIDIR PELA FORÇA DA GRAVIDADE</p>
+        <p id="tempo"></p>
+        <p>E POR FIM PARA ACHARMOS A DISTANCIA DEVEMOS MULTIPLICAR O TEMPO NO AR PELA VELOCIDADE DO EIXO X</p>
+        <p id="distt"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="zepulando.js"></script>
+</body>
+</html>
