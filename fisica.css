@@ -12,6 +12,7 @@ a{
 :root{
     --links-menu-navegacao:white;
 --fundo-fisica:#1a1a1a;
+
 --fundo-menu-navegacao:#2f2f2f;
 --fundo-card:#212121;
 --cor-scroll-bar:#181818;
@@ -271,7 +272,7 @@ border-radius: 3px;
     }
 }
 .fundo-cards{
-    background-color:var(--fundo-card);
+    background-color:var(--fundo-fisica);
     padding: 200px;
     
     transition: all 2s;
@@ -672,12 +673,18 @@ background-color: var(--fundo-card);
     }
 
     .fundo-fisica{
+        padding: 200px ; 
+        margin-top: -9%;
+        background-color:var(--fundo-fisica);
+        position: relative;
+        overflow: hidden;
+        height: 600px;
         
     }
     .title2-2{
-        margin-top: 8%;
+        margin-top: 10%;
         font-size: 100px;
-        margin-left: -40% ;
+        margin-left: -38% ;
     }
 
     .gradiente3{
@@ -894,5 +901,7 @@ background-color: var(--fundo-card);
         .fundo-cards.rolagem2{
             padding-top: 50%;
             background-color: var(--fundo-card);
+            transition: all 0.8s ;
             }
+          
   }

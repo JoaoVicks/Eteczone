@@ -218,6 +218,7 @@ select:focus{
         margin-top: 7%;
         font-size: 20px;
         font-weight: 700;
+        width:295px;
         
     }
     .formulario4 input:focus{

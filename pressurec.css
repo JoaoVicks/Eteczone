@@ -129,7 +129,106 @@ color: orangered !important;
     opacity: 6;
 
 }
+.original-button5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration: none;
+    color: var(--botao-home);
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    transition: all 1s;
+    border: 2px solid var(--botao-home);
+    transition: 0.3s;
+    background-color: transparent;
+    margin-left: 55%;
+    margin-top: -3%;
+    
+    position: absolute;
+    z-index: 10;
+}
+.btn-nvresultnv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins';
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    font-weight: 700;
+    border: 2px solid orangered;
+    transition: 0.5s;
+    background-color: transparent;
+    margin-left: 39%;
+    margin-top: 2%;
+}
 .swiper-pagination-bullet-active{
     background-color: orangered !important;
     opacity: 10;
+}
+.title-resolucao3{
+    font-size: 75px;
+    margin-top: 5%;
+    margin-left: 31%;
+    font-family: 'Poppins';
+
+}
+@media (max-width:500px) {
+
+    .original-button5 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration: none;
+        color: var(--botao-home);
+        font-size: 18px;
+        border-radius: 20px;
+        width: 130px;
+        height: 30px;
+        transition: all 1s;
+        border: 2px solid var(--botao-home);
+        transition: 0.3s;
+        background-color: transparent;
+        margin-left: 59%;
+        margin-top: -5%;
+        
+        
+        position: absolute;
+        z-index: 10;
+    }
+
+    .title-resolucao3{
+        font-size: 45px;
+        margin-top: 30%;
+        margin-left: 9%;
+        font-family: 'Poppins';
+        margin-bottom: 5%;
+    }
+    .btn-nvresultnv{
+
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins';
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    font-weight: 700;
+    border: 2px solid orangered;
+    transition: 0.5s;
+    background-color: transparent;
+    margin-left: 15%;
+    margin-top: 7%;
+
+    }
 }

@@ -15,10 +15,32 @@ input:focus {
     display: none;
 }
 
-
+.posionamento-dos-cards2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    padding: 110px;
+    }
 
 
 button{
     cursor: pointer;
 }
 
+@media (max-width:500px){
+
+    .posionamento-dos-cards2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+        padding: 25px;
+        }
+        .posionamento-dos-cards2 .card6{
+            margin: 15px;
+
+        }
+    
+    
+}

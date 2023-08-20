@@ -1,7 +1,7 @@
 //mudança do tamanho do fundo 
 window.addEventListener("scroll", function() {
-    let header = document.querySelector('#ifundo');
-    header.classList.toggle('rolagem2', window.scrollY > 0);
+    let fundo = document.querySelector('#ifundo');
+    fundo.classList.toggle('rolagem2', window.scrollY > 0);
 });
 
 //mudança de do menu navegação
