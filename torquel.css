@@ -16,11 +16,38 @@ input:focus {
     margin-top: 7%;
 }
 
+.title-resolucao2{
+    font-size: 75px;
+    margin-top: 2%;
+    margin-left: 31%;
+    font-family: 'Poppins';
 
+}
 button{
     cursor: pointer;
 }
+.original-button5{
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-decoration: none;
+    color: var(--botao-home);
+    font-size: 18px;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    transition: all 1s;
+    border: 2px solid var(--botao-home);
+    transition: 0.3s;
+    background-color: transparent;
+    margin-left: 55%;
+    margin-top: -3.5% !important;
+    
+    position: absolute;
+    z-index: 10;
+}
 :root{
     --cor-de-fundo-nav: #2c2c2c;
     --cor-de-fundo-form:#333;
@@ -80,6 +107,24 @@ select{
     color:#757575;
 
 }
+.btn-nvresult2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins';
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    font-weight: 700;
+    border: 2px solid orangered;
+    transition: 0.5s;
+    background-color: transparent;
+    margin-left: 39%;
+    margin-top: 2%;
+}
 select:focus{
     border-bottom: 3px solid #ff4500;
     outline: none;
@@ -121,5 +166,93 @@ select:focus{
     font-family: 'Poppins';
     text-align: center;
     padding:5px;
+    
+}
+@media (max-width:500px) {
+    .original-button5{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration: none;
+        color: var(--botao-home);
+        font-size: 18px;
+        border-radius: 20px;
+        width: 130px;
+        height: 30px;
+        transition: all 1s;
+        border: 2px solid var(--botao-home);
+        transition: 0.3s;
+        background-color: transparent;
+        margin-left: 55%;
+        margin-top: -5% !important;
+        
+        position: absolute;
+        z-index: 10;
+    }
+    .formulario4{
+    
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        padding: 10px 45px;
+        backdrop-filter: blur(5px); background-color:var(--cor-de-fundo-form); border-radius: 38px;
+        box-shadow: 0px 35px 68px 0px rgba(255, 69, 0, 0.5), inset 0px -12px 16px 0px rgba(255, 69, 0, 0.6);
+        width: 85%;
+        margin-left: 8%;
+        margin-top: 10%;
+        height: 590px;
+        
+    }
+    .formulario4 input{
+        border-left: none;
+        border-right: none;
+        font-family: 'Poppins';
+        border-top: none;
+        background-color: transparent;
+        border-bottom: var(--linha-input-antes-hover)  !important ;
+        padding-left: 2%;
+        transition: all 0.7s;
+        margin-left:5%;
+        margin-top: 7%;
+        font-size: 20px;
+        font-weight: 700;
+        
+    }
+    .formulario4 input:focus{
+        border-bottom: 3px solid #ff4500 !important;
+    }
+    .formulario4 h1{
+        font-family: 'Poppins';
+        text-align: center;
+        padding:5px;
+        
+    }
+    .title-resolucao2{
+        font-size: 45px !important;
+        margin-top: 22% !important;
+        margin-left: 9%;
+        font-family: 'Poppins';
+    }
+
+    .btn-nvresult2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family:'Poppins';
+        text-decoration: none;
+        color: orangered;
+        font-size: 18px;
+        border-radius: 20px;
+        width: 300px;
+        height: 45px;
+        font-weight: 700;
+        border: 2px solid orangered;
+        transition: 0.5s;
+        background-color: transparent;
+        margin-left: 12%;
+        margin-top: 2%;
+    }
     
 }
