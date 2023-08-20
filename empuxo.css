@@ -248,22 +248,18 @@ body{
     margin-left: 10%;
     z-index:4 ;
     margin-top: -2px;
-    
-    
-    
-    
-  }
-  .switch3:active{
+}
+.switch3:active{
     transform: scale(0.9);
-  }
-  
+}
+
   /* Hide default HTML checkbox */
-  .switch3 input {
+ .switch3 input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
+}
+
   /* The slider */
   .slider {
     position: absolute;
@@ -565,9 +561,6 @@ color: orangered;
     margin-left: 31%;
     font-family: 'Poppins';
 
-
-    
-
 }
 .buble6{
     height: 200px;
@@ -613,4 +606,160 @@ color: orangered;
     }
 
     
+}
+@media (max-width:500px)  {
+    body{
+        overflow-x: hidden;
+    }
+    .icn1, .icone2,.icn3,.icn4{
+        display: none;
+
+    }
+
+    .menu-navegacao3 {
+        background-color: var(--cor-de-fundo-nav);
+        padding: 30px 4%;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-left: 0%;
+        border-bottom-left-radius:20px ;
+        border-bottom-right-radius: 20px;
+        width: 100%;
+        transition: 1s;
+        z-index: 3;
+        box-shadow: var(--sombra-menu-nav);
+    }
+    
+    
+    .menu-navegacao3 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    
+    .menu-navegacao3 li {
+    display: inline-block;
+    margin-right: 50px;
+    
+    
+    }
+    .original-button4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-decoration: none;
+        color: var(--botao-home);
+        font-size: 18px;
+        border-radius: 20px;
+        width: 130px;
+        height: 30px;
+        transition: all 1s;
+        border: 2px solid var(--botao-home);
+        transition: 0.3s;
+        background-color: transparent;
+        margin-left: 59%;
+        margin-top: -2%;
+        
+        position: absolute;
+        z-index: 10;
+    }
+    .switch3 {
+        display: block;
+        --width-of-switch: 3.5em;
+        --height-of-switch: 2em;
+        /* size of sliding icon -- sun and moon */
+        --size-of-icon: 1.4em;
+        /* it is like a inline-padding of switch */
+        --slider-offset: 0.3em;
+        position: absolute;
+        width: var(--width-of-switch);
+        height: var(--height-of-switch);
+        margin-left: 10%;
+        z-index:4 ;
+        margin-top: -2px;
+        
+
+}
+.links2{
+    text-decoration: none;
+    color:var(--cor-dos-links);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    margin-top: 5px;
+    font-size: 28px;
+    font-weight: 400;
+    position: absolute;
+    margin-top: -6%;
+    margin-left: -5%;
+}
+.formulario{
+    
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    padding: 10px 45px;
+    backdrop-filter: blur(5px); background-color:var(--cor-de-fundo-form); border-radius: 38px;
+    box-shadow: 0px 35px 68px 0px rgba(255, 69, 0, 0.5), inset 0px -12px 16px 0px rgba(255, 69, 0, 0.6);
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 33%;
+    height: 620px;
+    
+}
+.formulario input{
+    border-left: none;
+    border-right: none;
+    font-family: 'Poppins';
+    border-top: none;
+    background-color: transparent;
+    border-bottom: var(--linha-input-antes-hover);
+    padding-left: 2%;
+    transition: all 0.7s;
+    margin-left:5%;
+    margin-top: -1%;
+    font-size: 20px;
+    font-weight: 700;
+    width: 280px;
+    
+}
+.formulario h1{
+    font-family: 'Poppins';
+    text-align: center;
+    
+    
+}
+
+.title-resolucao{
+    font-size: 45px;
+    margin-top: 15%;
+    margin-left: 9%;
+    font-family: 'Poppins';
+}
+.buble6,.buble7,.buble8,.buble9{
+    display: none;
+}
+.btn-nvresult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Poppins';
+    text-decoration: none;
+    color: orangered;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 300px;
+    height: 45px;
+    font-weight: 700;
+    border: 2px solid orangered;
+    transition: 0.5s;
+    background-color: transparent;
+    margin-left: 12%;
+    margin-top: 2%;
+}
+
 }
