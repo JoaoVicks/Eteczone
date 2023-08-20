@@ -64,6 +64,8 @@ input{
     --box-shadow: inset 0px 0px 20px #ff4d008e;
     --linhas-dos-links2:orangered;
     --letras-dos-botoes:white;
+    --cor-da-numeracao2: #ff4500;
+    --box-shadow2: var(--box-shadow);
 }
 
 .formulario4{

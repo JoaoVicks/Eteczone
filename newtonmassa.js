@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded' ,function(){
 
 
  botao$.addEventListener('change',function(){
- html$.classList.toggle('light-mode5')
+ html$.classList.toggle('light-mode7')
 
  });
 
