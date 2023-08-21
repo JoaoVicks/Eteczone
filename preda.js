@@ -9,7 +9,7 @@ function realizar() {
     document.getElementById("speed").innerHTML = `VELOCIDADE = ${Distance} ÷ ${Time} = ${StoneSpeed}`;
     document.getElementById("cinet").innerHTML = `CINÉTICA = 0.5 × ${StoneMass} × ${StoneSpeed}² = ${StoneKE}`;
 
-    document.getElementById("saida").style.display = "flex";
+    document.getElementById("saida").style.display = "block";
     document.getElementById("entrada").style.display = "none";
     }
 

@@ -4,22 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="preda.css">
+    <link rel="stylesheet" href="densidade.css">
+    <link rel="stylesheet" href="shield.css">
+    <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="teste.css">
+<link rel="stylesheet" href="pressurec.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
+    <link rel="stylesheet" href="newtonmassa.css">
+    <link rel="stylesheet" href="newtoninclinado.css">
     <title>PEDRA👍</title>
 </head>
 <body>
-    <div id="entrada">
-        <input type="number" id="mass" placeholder="MASSA DA PEDRA"> 
-        <input type="number" id="dist" placeholder="DISTANCIA">
-        <input type="number" id="temp" placeholder="TEMPO"> 
-        <button onclick="realizar()">ENVIAR</button>
+    <nav class="menu-navegacao3" id="inav">
+        
+        <label class="switch3" >
+            <input type="checkbox" id="idark12">
+            <span class="slider"></span>
+        </label>
+    
+            <ul>
+            <li><a class="links2" href="fisica.html">Cards</a></li>
+    
+            </ul>
+        <a href="teste.html" > <button   class="original-button5" >HOME</button></a>
+    </nav> 
+
+    <div id="entrada" class="formulario3 ;" style="height: 350px;">
+        <div class="gradiente2" style="margin-bottom: 10%;" >
+            <h1>Insira os Valores</h1>
+            </div>
+        <input type="number" id="mass" placeholder="MASSA DA PEDRA"> <br>
+        <input type="number" id="dist" placeholder="DISTANCIA"><br>
+        <input type="number" id="temp" placeholder="TEMPO"><br><br>
+
+        <button class="original-button3" onclick="realizar()" >ENVIAR</button>
     </div>
     <div id="saida">
-        <p>PARA ACHAR A VELOCIDADE DEVEMOS DIVIDIR A DISTANCIA PELO TEMPO</p>
-        <p id="speed"></p>
-        <p>E PARA ACHARMOS A ENERGIA CINÉTICA DEVEMOS MULTIPLICAR 0,5 PELA MASSA DA PEDRA E PELA VELOCIDADE ELEVADA AO QUADRADO</p>
-        <p id="cinet"></p>
-        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+        <div class="gradiente2">
+            <h1 class="title-resolucao3" > Passo a passo </h1>
+            </div> 
+
+        <div class="posionamento-dos-cards3">
+            
+            
+                    
+            <div class="card6 swiper-slide">
+                <div class="image-content">
+                        <div class="card-img " >
+        
+                        <img src="aceleracao.png">
+        
+                        </div>
+                        <h1 class="numeracao2" >1</h1>
+                </div>
+                <div class="titulo-explicacao">
+                        <div class="gradiente2">
+                            <h2>Cálculo Velocidade</h2>
+                        </div>
+                </div>
+        
+                <div class="texto-explicacao">
+                    <p>PARA ACHAR A VELOCIDADE DEVEMOS DIVIDIR A DISTANCIA PELO TEMPO</p>
+                
+                </div>
+                <div class="gradiente2">
+                <div class="resultado1">
+                 <p id="speed"></p>
+                </div>
+                </div>
+            </div>
+            <div class="card6 swiper-slide">
+                <div class="image-content">
+                        <div class="card-img">
+        
+                        <img src="energia-cinetica.png">
+        
+                        </div>
+                        <h1 class="numeracao2" >2</h1>
+        
+                </div>
+                <div class="titulo-explicacao">
+                        <div class="gradiente2">
+                            <h2> Cálculo Energia Cinética </h2>
+                        </div>
+        
+                </div>
+                <div class="texto-explicacao">
+                    <p>E PARA ACHARMOS A ENERGIA CINÉTICA DEVEMOS MULTIPLICAR 0,5 PELA MASSA DA PEDRA E PELA VELOCIDADE ELEVADA AO QUADRADO</p>
+            
+                    
+                </div>
+                <div class="gradiente2">
+                <div class="resultado1"> 
+                <p id="cinet"></p>
+                </div>
+                </div>
+            </div>
+           
     </div>
+       
+        <button class="btn-nvresultnv" onclick="voltar()">INSERIR NOVOS VALORES</button>
+
+    </div>
+
+    
+    
     <script src="preda.js"></script>
 </body>
 </html>

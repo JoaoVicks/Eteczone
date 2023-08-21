@@ -3,7 +3,10 @@ input:hover::-webkit-inner-spin-button{
     -webkit-appearance: none;
 
 }
-
+.card6{
+    margin-left:3% ;
+    
+}
 input:focus::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
@@ -16,20 +19,39 @@ input:focus {
     display: none;
     flex-direction: column;
 }
-
-#entrada{
+.posionamento-dos-cards3{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 1%;
+    padding: 110px;
 }
-
-input::placeholder{
-    text-align: center;
+.swiper-slide2 {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    display: block;
 }
 
 button{
     cursor: pointer;
 }
 
-input{
-    text-align: center;
+@media (max-width:500px) {
+
+    .posionamento-dos-cards3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 4%;
+       
+    }
+    .card6{
+        margin-top: 5% ;
+        
+    }
+
+    
 }
