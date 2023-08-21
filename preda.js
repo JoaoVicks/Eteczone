@@ -28,3 +28,13 @@ function voltar() {
     document.getElementById("temp").value = "";
     
 }
+
+let html$ = document.querySelector('html');
+let btn$ =  document.querySelector('#idark13');
+
+btn$.addEventListener('change', function(){
+html$.classList.toggle('light-mode7');
+
+
+
+});
