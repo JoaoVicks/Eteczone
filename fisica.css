@@ -368,6 +368,66 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card16{
+    background-image: url(trabalhoa\ simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card15{
+    background-image: url(zepulando\ simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card14{
+    background-image: url(simulador\ bill.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card13{
+    background-image: url(simulador\ pedra\ .png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card12{
+    background-image: url(pulandosss\ simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
 .fundo1_card11{
     
     background-image: url(cobre\ simulador.png);
