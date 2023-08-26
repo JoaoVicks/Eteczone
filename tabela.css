@@ -37,7 +37,7 @@ background-color: yellow;
 width: 60px;
 height: 60px;
 margin-top: 13px;
-transition: all 0.8s;
+transition: all 0.5s;
 border-radius: 5px;
 text-align: center;
 }
