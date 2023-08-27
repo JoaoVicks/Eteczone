@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Faustina:ital,wght@1,500&family=Poppins:wght@300;400;700;800&family=Quicksand&display=swap');
 *{box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -15,13 +16,15 @@ body{
     border-radius: 7px;
     margin-top: -1.0%;
     margin-left: 15%;
+    align-items: center;
+    
 
 }
 .info button{
     width: 80px;
     height: 25px;
     margin-top: 25%;
-    margin-left: 85%;
+    margin-left: 60%;
     border-radius:7px ;
 }
 .tabela_periodic{
@@ -37,7 +40,7 @@ background-color: yellow;
 width: 60px;
 height: 60px;
 margin-top: 13px;
-transition: all 0.5s;
+transition: all 0.8s;
 border-radius: 5px;
 text-align: center;
 }
@@ -83,4 +86,39 @@ h2{
     position: absolute;
     z-index: 2;
     color: white;
+}
+
+#sigla{
+    color: orangered;
+    font-size: 50px;
+    font-family:  'Poppins';
+    font-weight: 300;
+    padding: 50px;
+}
+#nm_at{
+    color:rgb(0, 0, 0);
+    font-size: 30px;
+    margin-top: -160px;
+    margin-left: -100px;
+}
+#estado{
+    margin-top: 40%;
+font-size: 20px;
+color: rgb(0, 0, 0);
+}
+.sigla{
+    margin-top: 25%;
+    font-size: 25px;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+.quadradinho{
+    background-color: yellow;
+    width: 150px !important;
+    height: 150px;
+        
+transition: all 0.8s;
+    border-radius: 5px;
+text-align: center;
+
 }
