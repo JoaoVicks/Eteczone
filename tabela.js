@@ -137,6 +137,50 @@ const estado_fisico = [
     2, 3, 1, 1, 1, 2,
     2, 2, 2, 2, 2, 2,
 ];
+const lantanoides_actinoides = ["La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb", "Lu", "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No", "Lr"];
+const elementosNomeLantanoidesActinoides = [
+    "Lantânio", "Cério", "Praseodímio", "Neodímio", "Promécio",
+    "Samário", "Európio", "Gadolínio", "Térbio", "Disprósio",
+    "Hólmio", "Érbio", "Túlio", "Itérbio", "Lutécio",
+    "Actínio", "Tório", "Protactínio", "Urânio", "Netúnio",
+    "Plutônio", "Amerício", "Cúrio", "Berquélio", "Califórnio",
+    "Einstênio", "Férmio", "Mendelévio", "Nobélio", "Laurêncio"
+];
+
+document.addEventListener('DOMContentLoaded', function () {
+    let elementos_lan_acti = document.querySelectorAll('.tabela_periodica2 .elementos_adcionais')
+
+    lantanoides_actinoides.forEach(function (element_ac_lan, index2) {
+
+        let divSigla2 = document.createElement('div');
+        let nm2 = document.createElement('div');
+
+        let p5 = document.createElement('p');
+        let p6 = document.createElement('p');
+
+        p6.textContent = elementosNomeLantanoidesActinoides[index2];
+        p5.textContent = element_ac_lan;
+        
+        nm2.appendChild(p6)
+        nm2.classList.add('nome_elemento2')
+
+        divSigla2.classList.add('sigla2');
+        divSigla2.appendChild(p5);
+        elementos_lan_acti[index2].appendChild(divSigla2);
+        elementos_lan_acti[index2].appendChild(nm2);
+
+
+
+
+    });
+
+
+
+
+
+})
+
+
 
 
 
