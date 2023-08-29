@@ -168,7 +168,12 @@ h2{
 }
 
 #sigla{
-    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 700% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     font-size: 50px;
     font-family:  'Poppins';
     font-weight: 300;
@@ -181,9 +186,10 @@ h2{
     margin-left: -100px;
 }
 #estado{
-    margin-top: 40%;
+    margin-top: 20%;
 font-size: 20px;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+font-family: 'Poppins';
 }
 .sigla{
     margin-top: 5%;
@@ -226,6 +232,11 @@ text-align: center;
 }
 #nm_at{
     font-family: 'Poppins';
+    background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 700% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #nome {
     margin-left: 25%;
@@ -233,6 +244,22 @@ text-align: center;
     color: white;
     font-size: 30px;
     font-family: 'Poppins';
+}
+#massa_atomica{
+color: black;
+font-size: 20px;
+font-family: 'Poppins';
+font-weight: 300;
+margin-top: 35%;
+background-image: linear-gradient(to left ,orange, rgb(255, 0, 0),rgb(255, 166, 0));
+    background-size: 700% 100%;
+    animation: mov-degrade 3s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+
+
 }
 .nm_fml{
     position: absolute;

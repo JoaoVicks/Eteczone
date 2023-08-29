@@ -1,4 +1,5 @@
-
+import { massa_at } from "./elements.js";
+import { simbolos_tabela_periodica } from "./elements.js";
 function sumir() {
     let info = document.querySelector(".info");
 
@@ -168,6 +169,10 @@ document.addEventListener('DOMContentLoaded', function () {
         divSigla2.appendChild(p5);
         elementos_lan_acti[index2].appendChild(divSigla2);
         elementos_lan_acti[index2].appendChild(nm2);
+        elementos_lan_acti[index2].addEventListener('click', function(){
+
+            mostrarConteudo2(element_ac_lan,elementosNomeLantanoidesActinoides[index2])
+        })
 
 
 
@@ -209,12 +214,30 @@ document.addEventListener('DOMContentLoaded', function () {
         periodos[index].appendChild(divNome);
         periodos[index].classList.add(elemento);
         periodos[index].addEventListener('click', function () {
-            mostrarConteudo(elemento, numerosAtomicosPorColuna[index], estado_fisico[index], nomesElementosQuimicos[index]);
+            mostrarConteudo(elemento, numerosAtomicosPorColuna[index], estado_fisico[index], nomesElementosQuimicos[index],);
         });
     });
 });
 
-function mostrarConteudo(elemento, valor, fisico, nomeclatura) {
+function mostrarConteudo2(element_ac_lan,nomeclatura2){
+    let p4 = document.getElementById('nome')
+p4.textContent = (nomeclatura2)
+info.style.display = 'flex';
+
+
+
+
+}
+
+function mostrarConteudo(elemento, valor, fisico, nomeclatura,) {
+    for (let i = 0; i < simbolos_tabela_periodica.length; i++) {
+        if (elemento == simbolos_tabela_periodica[i]) {
+            let massa =  massa_at[i];
+            let p7= document.getElementById('massa_atomica')
+            p7.textContent = (massa)
+        }
+        
+    }
     let p1 = document.getElementById("sigla");
     let p2 = document.getElementById('nm_at');
     let p3 = document.getElementById('estado');
@@ -229,25 +252,25 @@ function mostrarConteudo(elemento, valor, fisico, nomeclatura) {
     p4.textContent = nomeclatura
 
     if (fisico === 1) {
-        p3.textContent = 'solido'
+        p3.innerHTML = ' o corpo se encontra no estado sólido'
 
     }
     if (fisico === 2) {
-        p3.textContent = ' gasoso'
+        p3.textContent = ' o corpo se encontra no estado gasoso'
 
     }
     if (fisico === 3) {
-        p3.textContent = 'liquido'
+        p3.textContent = ' o corpo se encontra no estado líquido'
 
     }
     if (elemento === "B" || elemento === "Si" || elemento === "Ge" || elemento === "As" || elemento === "Sb" || elemento === "Te" || elemento === "Po") {
-        quadrado.style.backgroundColor = 'coral';
+        quadrado.style.backgroundColor = 'white';
     }
     else if (elementos2.includes(elemento)) {
         quadrado.style.backgroundColor = 'greenyellow';
     }
     else {
-        quadrado.style.backgroundColor = 'yellow';
+        quadrado.style.backgroundColor = '#2c2c2c';
 
     }
 }
