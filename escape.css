@@ -1,0 +1,35 @@
+
+input:hover::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+
+}
+
+input:focus::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+#saida{
+    display: none;
+    flex-direction: column;
+}
+
+#entrada{
+    display: flex;
+    flex-direction: column;
+}
+
+input::placeholder{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+input{
+    text-align: center;
+}

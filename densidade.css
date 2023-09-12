@@ -15,11 +15,23 @@ input:focus {
     display: none;
 }
 
+#entrada{
+    display: flex;
+    flex-direction: column;
+}
 
-
-
+input::placeholder{
+    text-align: center;
+}
 
 button{
     cursor: pointer;
 }
 
+input{
+    text-align: center;
+}
+
+select{
+    text-align: center;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="certainhp.css">
+    <title>Bola👍</title>
+</head>
+<body>
+    <div id="entrada">
+        <input type="number" id="grav" placeholder="ACELERAÇÃO DA GRAVIDADE">    
+        <input type="number" id="mass" placeholder="PESO DA BOLA"> 
+        <input type="number" id="velo" placeholder="VELOCIDADE DA BOLA">
+        <input type="number" id="ang" placeholder="ANGULO DA BOLA">
+        <button onclick="realizar()">ENVIAR</button>
+    </div>
+    <div id="saida">
+        <p>PRIMEIRO VAMOS TRANSFORMAR O ANGULO EM RADIANO MULTIPLICANDO ELE POR PI E DIVIDINDO POR 180</p>
+        <p id="rada"></p>
+        <p>PARA ACHARMOS O COMPONENTE VERTICAL VAMOS MULTIPLICAR A VELOCIDADE DA BOLA PELO SENO DO ANGULO EM RADIANO</p>
+        <p id="voy"></p>
+        <p>AGORA PARA ACHARMOS O TEMPO DA BOLA NO AR VAMOS ELEVAR O COMPONENTE VERTICAL AO QUADRADO, SUBTRAI-LO POR 4 MULTIPLICADO POR 0.5 E PELA ACELERAÇÃO GRAVITACIONAL</p>
+        <p id="radival"></p>
+        <p>PARA ACHARMOS O TEMPO ENQUANTO A BOLA ESTÁ SUBINDO DEVEMOS SUBTRAIR A RAIZ QUADRADA DO TEMPO NO AR PELO COMPONENTE VERTICAL</p>
+        <p id="1time"></p>
+        <p>PARA ACHARMOS O TEMPO ENQUANTO A BOLA ESTÁ CAINDO DEVEMOS SOMAR A RAIZ QUADRADA DO TEMPO NO AR PELO COMPONENTE VERTICAL</p>
+        <p id="2time"></p>
+        <p>AGORA É SÓ TRANSFORMAR ESSES TEMPOS EM MILISSEGUNDOS</p>
+        <p id="1timem"></p>
+        <p id="2timem"></p>
+        <button onclick="voltar()">INSERIR NOVOS VALORES</button>
+    </div>
+    <script src="certainhp.js"></script>
+</body>
+</html>
