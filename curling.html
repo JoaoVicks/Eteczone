@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predas</title>
+    <style>
+    
+
+    </style>
+</head>
+<body>
+    <input type="number" id="M1" placeholder="Massa No Eixo X">
+    <input type="number" id="V1" placeholder="Velocidade No Eixo X"><br>
+    <label for="eixox">Para onde esta pedra está se movendo?</label><br>
+    <select name="eixox" id="eixox">
+        <option value="E">Esquerda</option>
+        <option value="D">Direita</option>
+    </select><br><hr>
+    <input type="number" id="M2" placeholder="Massa No Eixo Y">
+    <input type="number" id="V2" placeholder="Velocidade No Eixo Y"><br>
+    <label for="eixoy">Para onde esta pedra está se movendo?</label><br>
+    <select name="eixoy" id="eixoy">
+        <option value="B">Baixo</option>
+        <option value="C">Cima</option>
+    </select><br>
+    <button onclick="valor()">ENVIARRR</button>
+    <p id="t"></p>
+
+    <script src="curling.js">
+    </script>
+</body>
+</html>
