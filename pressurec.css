@@ -42,6 +42,7 @@ input{
     --box-shadow: inset 0px -5px 20px rgba(11, 11, 11, 0.749);
     --linhas-dos-links2:#fff;
     --letras-dos-botoes:black;
+    --cor-do-select:#333;
 
 
 }
@@ -66,6 +67,7 @@ input{
     --letras-dos-botoes:white;
     --cor-da-numeracao2: #ff4500;
     --box-shadow2: var(--box-shadow);
+    --cor-do-select:transparent;
 }
 
 .formulario4{

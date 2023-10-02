@@ -17,32 +17,64 @@ function enviar(){
     var deltap = Pf - Pi
     var forca = deltap / (imp / 1000)
 
+    document.getElementById('saida').style.display = 'block';
+    document.getElementById('entrada').style.display= 'none';
     document.getElementById("texto1").innerHTML = `Resposta 1: Delta p = ${Math.abs(deltap).toFixed(2)}`
     document.getElementById("texto2").innerHTML = `Resposta 2: Força no disco = ${Math.abs(forca).toFixed(2)}`
-    document.getElementById("pre").innerHTML = `
-    ΔS = (${D2.toFixed(2)} - ${D1.toFixed(2)})/100 = ${deltas.toFixed(2)} 
-    ΔT inicial = (${T2.toFixed(2)} - ${T1.toFixed(2)})/1000 = ${deltat1.toFixed(2)}
-    ΔT final = (${T4.toFixed(2)} - ${T3.toFixed(2)})/1000 = ${deltat2.toFixed(2)}
-     
-    Vi = ${deltas.toFixed(2)} / ${deltat1} = ${Vi.toFixed(2)}
-    Pi = ${0.001*-massa.toFixed(2)} * ${Vi.toFixed(2)} = ${Pi.toFixed(2)}     <i>=>massa em Kg</i>
-    
-    Vf =  ${deltas.toFixed(2)} / ${deltat2.toFixed(2)} = ${Vf.toFixed(2)}
-    Pf = ${0.001*massa.toFixed(2)} * ${Vf.toFixed(2)} = ${Pf.toFixed(2)}      <i>=> massa em g/1000</i>
-    
-    ΔP = ${Pf.toFixed(2)} - ${Pi.toFixed(2)} = ${massa.toFixed(2)} * ${Vf.toFixed(2)} + ${massa.toFixed(2)} * ${Vi.toFixed(2)} = ${deltap.toFixed(2)}
-    F = ${deltap.toFixed(2)} / (${imp.toFixed(2)}/1000) = ${forca.toFixed(2)}`
-  
+
+
+document.getElementById("variaS").innerHTML = `ΔS = (${D2.toFixed(2)} - ${D1.toFixed(2)})/100 = ${deltas.toFixed(2)}`;
+document.getElementById("tempoIni").innerHTML= `ΔT inicial = (${T2.toFixed(2)} - ${T1.toFixed(2)})/1000 = ${deltat1.toFixed(2)}`
+document.getElementById("velocIni").innerHTML= `  Vi = ${deltas.toFixed(2)} / ${deltat1.toFixed(2)} = ${Vi.toFixed(2)}`
+document.getElementById("momentumIni").innerHTML= `Pi = ${0.001 * -massa.toFixed(2)} * ${Vi.toFixed(2)} = ${Pi.toFixed(2)}     <i>=>massa em Kg</i> `
+document.getElementById("tempoFinal").innerHTML= ` ΔT final = (${T4.toFixed(2)} - ${T3.toFixed(2)})/1000 = ${deltat2.toFixed(2)}    `
+document.getElementById("velocFinal").innerHTML= `  Vf = ${deltas.toFixed(2)} / ${deltat2.toFixed(2)} = ${Vf.toFixed(2)} `
+document.getElementById("momentumFinal").innerHTML= `   Pf = ${0.001 * massa.toFixed(2)} * ${Vf.toFixed(2)} = ${Pf.toFixed(2)}      <i>=> massa em g/1000</i> `
+document.getElementById("variaMomentu").innerHTML= `ΔP = ${Pf.toFixed(2)} - ${Pi.toFixed(2)} = ${massa.toFixed(2)} * ${Vf.toFixed(2)} + ${massa.toFixed(2)} * ${Vi.toFixed(2)} = ${Math.abs(deltap).toFixed(2)}`
+document.getElementById("forca").innerHTML= ` F = ${deltap.toFixed(2)} / (${imp.toFixed(2)}/1000) = ${Math.abs(forca).toFixed(2)}` 
+
 
 
 // a explicação pode ficar assim:
-//Primeiro, encontramos a variação de espaço subtraindo a segunda medida pela primeira
-//Em segundo lugar, encontramos a variação de tempo inicial, de quando o disco vai em direção à parede, subtraindo o segundo tempo registrado pelo primeiro
-//Em seguida, encontramos a velocidade inicial a partir dos valores calculados, dividindo variação de espaço pela variação de tempo inicial
-//A seguir, encontramos o Momentum inicial multiplicando a velocidade inicial pela massa negativa
-//Após isso, encontramos a variação de tempo final, de depois que o disco bate na parede, subtraindo o quarto tempo registrado pelo terceiro
-//Depois, encontramos a velocidade final a partir dos valores calculados, dividindo variação de espaço pela variação de tempo final
-//E então, encontramos o Momentum final multiplicando a velocidade final pela massa
-//Calculamos a variação de Momentum subtraindo o Momentum final pelo Momentum inicial. Essa é a primeira resposta:
-//E enfim, encontramos a força aplicada ao disco, dividindo a variação de Momentum pelo tempo de impacto. Essa é a segunda resposta:
+
+//
+//
+//
+//
 }
+function desaparecer(){
+    var imagem1 = document.getElementById("img1-3");
+    var imagem2 = document.getElementById("img2-3");
+
+    imagem1.style.visibility = "hidden";
+    imagem2.style.visibility = "hidden";
+
+
+};
+
+function aparecer(){
+    let imagem1= document.getElementById('img1-3');
+    let imagem2= document.getElementById('img2-3');
+
+    imagem1.style.visibility = 'visible';
+    imagem2.style.visibility = 'visible ';
+}
+function voltar(){
+    document.getElementById('saida').style.display = 'none';
+    document.getElementById('entrada').style.display= 'flex';
+    document.getElementById("T1").value= ""
+document.getElementById("T2").value= ""
+document.getElementById("T3").value= ""
+document.getElementById("T4").value= ""
+document.getElementById("D1").value=''
+ocument.getElementById("D2").value= ""
+document.getElementById("massa").value= ""
+document.getElementById("impacto").value= ""
+    
+}
+let html = document.querySelector('html');
+let btn = document.querySelector('#idark10');
+
+btn.addEventListener('change',function(){
+    html.classList.toggle('light-mode7');
+});

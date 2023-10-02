@@ -1,0 +1,30 @@
+input:hover::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+
+}
+
+input:focus::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+input:focus {
+    outline: none;
+}
+#entrada{
+    display:flex;
+}
+#saida{
+    display: none;
+}
+.formulario3 p{
+    color: orangered;
+    font-family: 'Poppins';
+    font-size: 24px;
+
+}
+.formulario3{
+    text-align: center;
+}
+#saida p{
+    color: aliceblue;
+}

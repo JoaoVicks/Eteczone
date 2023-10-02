@@ -368,6 +368,31 @@ background-color: var(--fundo-card);
 
 
 }
+.fundo1_card18{
+    background-image: url(hoquei_simulador.png);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+.fundo1_card17{
+    background-image: url(pedras.PNG);
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-position: center;
+
+
+}
+
 .fundo1_card16{
     background-image: url(trabalhoa\ simulador.png);
     background-size: cover;

@@ -1,33 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Predas</title>
-    <style>
-    
-
-    </style>
+    <link rel="stylesheet" href="curling.css">
+    <link rel="stylesheet" href="determinef.css">
+    <link rel="stylesheet" href="pressurec.css">
+    <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
+    <link rel="stylesheet" href="newtonmassa.css">
+    <link rel="stylesheet" href="newtoninclinado.css">
+    <link rel="stylesheet" href="shield.css">
 </head>
+
 <body>
-    <input type="number" id="M1" placeholder="Massa No Eixo X">
-    <input type="number" id="V1" placeholder="Velocidade No Eixo X"><br>
-    <label for="eixox">Para onde esta pedra está se movendo?</label><br>
-    <select name="eixox" id="eixox">
-        <option value="E">Esquerda</option>
-        <option value="D">Direita</option>
-    </select><br><hr>
-    <input type="number" id="M2" placeholder="Massa No Eixo Y">
-    <input type="number" id="V2" placeholder="Velocidade No Eixo Y"><br>
-    <label for="eixoy">Para onde esta pedra está se movendo?</label><br>
-    <select name="eixoy" id="eixoy">
-        <option value="B">Baixo</option>
-        <option value="C">Cima</option>
-    </select><br>
-    <button onclick="valor()">ENVIARRR</button>
-    <p id="t"></p>
+    <nav class="menu-navegacao3" id="inav">
+
+        <label class="switch3">
+            <input type="checkbox" id="idark10">
+            <span class="slider"></span>
+        </label>
+
+        <ul>
+            <li><a class="links2" href="fisica.html">Cards</a></li>
+
+        </ul>
+        <a href="teste.html"> <button class="original-button5">HOME</button></a>
+    </nav>
+
+    <div class="formulario3" id="entrada" style="height: 630px;">
+        <div class="gradiente2">
+            <h1>Insira os Valores</h1>
+        </div>
+        <input type="number" id="M1" placeholder="Massa No Eixo X">
+        <input type="number" id="V1" placeholder="Velocidade No Eixo X"><br>
+        <p for="eixox">Para onde esta pedra está se movendo?</p><br>
+        <select name="eixox" id="eixox">
+            <option value="E">Esquerda</option>
+            <option value="D">Direita</option>
+        </select>
+        <br>
+
+        <input type="number" id="M2" placeholder="Massa No Eixo Y"><br>
+        <input type="number" id="V2" placeholder="Velocidade No Eixo Y"><br>
+        <p>Para onde esta pedra está se movendo?</p><br>
+        <select name="eixoy" id="eixoy">
+            <option value="B">Baixo</option>
+            <option value="C">Cima</option>
+        </select>
+        <br>
+        <br>
+        
+
+        <button class="original-button3" onclick="valor()">Enviar Valores</button>
+    </div>
+
+    <div id="saida">
+    <p id="VT"></p>
+    <p id="ANG"></p>
+</div>
+    <img class="icn1" src="forca (1).png"style="margin-top: -18%;"  id="img1-3">
+    <img class="icone2"  src="icntensao.png" style="margin-top: -15%;" id="img2-3">
+    <img src="icn4.png"  style="margin-top: -50%;" class="icn4"  id="img3">
+    <img src="icn5.png" style="margin-top: -45%;" class="icn3" id="img4">
 
     <script src="curling.js">
+        
     </script>
 </body>
+
 </html>

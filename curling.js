@@ -1,4 +1,10 @@
 function valor(){
+   
+
+   
+    document.getElementById("saida").style.display = "block";
+    document.getElementById("entrada").style.display = "none";
+
     var M1 = parseFloat(document.getElementById("M1").value)
     var V1 = parseFloat(document.getElementById("V1").value)
     var M2 = parseFloat(document.getElementById("M2").value)
@@ -43,5 +49,14 @@ else{
     finalangle = 180 + refangle;
 }
 }
-document.getElementById("t").innerHTML = `${V.toFixed(2)}      ${finalangle.toFixed(2)}`
+
+document.getElementById("VT").innerHTML = ` Velocidade = ${V.toFixed(2)}`
+document.getElementById("ANG").innerHTML =  `Ângulo = ${finalangle.toFixed(2)}`
+ 
 }
+let html = document.querySelector('html');
+let btn = document.querySelector('#idark10');
+
+btn.addEventListener('change',function(){
+    html.classList.toggle('light-mode7');
+});
