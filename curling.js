@@ -11,7 +11,7 @@ function valor(){
     var V2 = parseFloat(document.getElementById("V2").value)
     var sentX = document.getElementById("eixox").value
     var sentY = document.getElementById("eixoy").value
-    if (M1 < 0 && V1 < 0 && M2 < 0 && V2 < 0){
+    if (M1 > 0 && V1 > 0 && M2 > 0 && V2 > 0){
     var x = Math.abs(M1*V1 / (M1+M2))
     var y = Math.abs(M2*V2 / (M1+M2))
     var V = Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))
