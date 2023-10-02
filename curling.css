@@ -28,3 +28,7 @@ input:focus {
 #saida p{
     color: aliceblue;
 }
+
+pre{
+    text-align: center;
+}
