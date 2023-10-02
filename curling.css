@@ -26,13 +26,8 @@ input:focus {
     text-align: center;
 }
 #saida p{
-    color: aliceblue;
-     align-items: center;   
+    color: aliceblue;  
 }
 
-body{
-    align-items: center;
-    justify-content: center;
-}
 
 
