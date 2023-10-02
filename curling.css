@@ -29,6 +29,11 @@ input:focus {
     color: aliceblue;
 }
 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 pre{
     text-align: center;
 }
