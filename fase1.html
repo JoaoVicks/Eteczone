@@ -1,18 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impulso e Momento</title>
+    <link rel="stylesheet" href="curling.css">
+    <link rel="stylesheet" href="determinef.css">
+    <link rel="stylesheet" href="pressurec.css">
+    <link rel="stylesheet" href="fisica.css">
+    <link rel="stylesheet" href="empuxo.css">
+    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="unpkg.com_swiper@10.0.4_swiper-bundle.min 2.css">
+    <link rel="stylesheet" href="newtonmassa.css">
+    <link rel="stylesheet" href="newtoninclinado.css">
+    <link rel="stylesheet" href="shield.css">
 </head>
-<body>
-    <input type="number" id="VelE" placeholder="VELOCIDADE AZUL"><br>
-    <input type="number" id="VelD" placeholder="VELOCIDADE VERMELHA"><br>
-    <input type="number" id="Massa" placeholder="MASSA DA DIREITA"><br>
-    <button onclick="enviar()">Enviar</button>
-    <br>
-    <p id="texto"></p>
 
-    <script src="fase1.js"></script>
+<body>
+    <nav class="menu-navegacao3" id="inav">
+
+        <label class="switch3">
+            <input type="checkbox" id="idark10">
+            <span class="slider"></span>
+        </label>
+
+        <ul>
+            <li><a class="links2" href="fisica.html">Cards</a></li>
+
+        </ul>
+        <a href="teste.html"> <button class="original-button5">HOME</button></a>
+    </nav>
+
+    <div class="formulario3" id="entrada">
+
+        <div class="gradiente2">
+            <h1>Insira os Valores</h1>
+        </div>
+        <input type="number" id="VelE" placeholder="VELOCIDADE AZUL"><br>
+        <input type="number" id="VelD" placeholder="VELOCIDADE VERMELHA"><br>
+        <input type="number" id="Massa" placeholder="MASSA DA DIREITA"><br>
+        <br>
+        <button class="original-button3" onclick="enviar() ; desaparecer()">Enviar</button>
+        <br>
+    </div>
+
+    <img class="icn1" src="forca (1).png" style="margin-top: -15%;" id="img1">
+    <img class="icone2" src="icntensao.png" style="margin-top: -10%;" id="img2">
+    <img src="icn4.png" style="margin-top: -40%;" class="icn4" id="img3">
+    <img src="icn5.png" style="margin-top: -35%;" class="icn3" id="img4">
+
+
+
+
+    <div id="saida">
+
+        <br>
+        <br>
+        <div class="slide-container swiper" style="margin-top: 5%;">
+            <div class="slide-content ">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <div class="card-img">
+
+                                <img src="peso.png">
+
+                            </div>
+
+                        </div>
+                        <div class="titulo-explicacao">
+                            <div class="gradiente2">
+                                <h2>Massa Desconhecida </h2>
+                            </div>
+                        </div>
+
+                        <div class="texto-explicacao">
+
+                        </div>
+                        <div class="gradiente2">
+                            <div class="resultado1">
+                                <p id="texto"></p>
+
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <button onclick="voltar() ; aparecer()" class="btn-nvresultnv" >INSERIR NOVOS VALORES</button>
+                <script src="fase1.js"></script>
 </body>
+
 </html>
